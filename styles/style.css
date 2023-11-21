@@ -1,31 +1,75 @@
-/**************/
-/* CSS REMEDY */
-/**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
 }
 
-
-
-
-
 /****************/
-/* JOUW STYLING */
+/* GENERIC STYLING */
 /****************/
 
-/* jouw code */
+body {
+	font-family: "Helvetica", sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+svg:hover {
+	opacity: 0.6;
+}
+
+/****************/
+/* HEADER STYLING */
+/****************/
+
+header section {
+	display: flex;
+	justify-content: space-between;
+	max-height: 60px;
+	padding: 7px 40px;
+	background-color: #f5f5f5;
+}
+
+header section ul {
+	display: flex;
+	gap: 10px;
+}
+
+header section ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: #111;
+	font-weight: 500;
+}
+
+header section ul li a {
+	font-size: 12px;
+	color: #111;
+	font-weight: 500;
+}
+
+
+
+header section ul:last-of-type li:nth-child(2) {
+	padding: 0 10px;
+	border-left: solid black 1px;
+	border-right: solid black 1px;
+}
 
