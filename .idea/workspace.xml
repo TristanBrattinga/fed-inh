@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b64e5304-ff64-43c8-ba9c-e02428900782" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/appImage1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/appImage2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/searchIcon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
@@ -38,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -80,12 +84,17 @@
       <updated>1699985792361</updated>
       <workItem from="1699985795294" duration="345000" />
       <workItem from="1700036756978" duration="12000" />
-      <workItem from="1700590344997" duration="2751000" />
+      <workItem from="1700590344997" duration="3129000" />
+      <workItem from="1700641769775" duration="62000" />
+      <workItem from="1701112677595" duration="4425000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
