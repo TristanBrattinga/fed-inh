@@ -36,15 +36,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
+  Nike
   https://www.nike.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/nike-site1.png" width="375px" alt="Screenshot nike website page one">
+  Nike home page  
+
+  (klik op de image want heb ze verkleind om niet eindeloos te moeten scrollen door de readme)
+  <img src="readme-images/nike-site1.png" height="375px" alt="Nike home page screenshot (small screen)">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/nike-site2.png" width="375px" alt="Screenshot nike website page 2">
+  Nike products page
+
+  (klik op de image want heb ze verkleind om niet eindeloos te moeten scrollen door de readme)
+  <img src="readme-images/nike-site2.png" height="375px" alt="Nike products page screenshot (small screen)">
  
 </details>
 
