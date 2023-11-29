@@ -43,12 +43,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nike home page  
 
   (klik op de image want heb ze verkleind om niet eindeloos te moeten scrollen door de readme)
+  
   <img src="readme-images/nike-site1.png" height="375px" alt="Nike home page screenshot (small screen)">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Nike products page
 
   (klik op de image want heb ze verkleind om niet eindeloos te moeten scrollen door de readme)
+  
   <img src="readme-images/nike-site2.png" height="375px" alt="Nike products page screenshot (small screen)">
  
 </details>
