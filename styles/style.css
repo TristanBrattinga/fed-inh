@@ -66,6 +66,7 @@ button {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 /****************/
@@ -271,7 +272,7 @@ header nav input {
     gap: 10px;
 }
 
-.productSlider ul li ul li {
+.productSlider ul li ul li button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,6 +280,14 @@ header nav input {
     width: 48px;
     height: 48px;
     border-radius: 999px;
+    padding: 0;
+}
+
+.productSlider ul li ul li button:hover {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    background-color: #CACACB;
 }
 
 .productSlider::-webkit-scrollbar {
