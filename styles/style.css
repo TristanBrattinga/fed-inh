@@ -14,7 +14,8 @@
     --nike-grey: #F5F5F5;
     --shadow1: #e5e5e5;
     --footer-black: #111111FF;
-    --text-lightgrey: #707072
+    --text-lightgrey: #707072;
+    --product-bestseller: #9E3500;
 }
 
 /****************/
@@ -24,6 +25,10 @@
 body {
     font-family: "Helvetica", sans-serif;
     height: auto;
+}
+
+section {
+    padding: 0 48px;
 }
 
 h2 {
@@ -77,7 +82,7 @@ header section {
     display: flex;
     justify-content: space-between;
     max-height: 60px;
-    padding: 7px 40px;
+    padding: 7px 48px;
     background-color: var(--nike-grey);
 }
 
@@ -112,7 +117,7 @@ header nav > ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 40px;
+    padding: 12px 48px;
 }
 
 header nav > ul > * {
@@ -207,6 +212,7 @@ header nav input {
 
 .hero {
     margin-top: 48px;
+    padding: 0
 }
 
 .hero figure img {
@@ -444,4 +450,98 @@ footer {
     color: white;
     background-color: var(--footer-black);
     padding: 40px;
+}
+
+/******************************** PAGE 2 STYLING ***************************/
+
+/*************************/
+/*  PRODUCT HEADER STYLING */
+/*************************/
+
+.productHeader {
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding: 20px 48px;
+    transition: font-size 200ms ease;
+}
+
+.productHeader ul {
+    display: flex;
+    gap: 10px;
+}
+
+.productHeader ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productHeader.sticky h1 {
+    font-size: 16px;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+/*************************/
+/*  PRODUCT GRID STYLING */
+/*************************/
+
+.productGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.productGrid aside {
+    width: 212px;
+}
+
+.productGrid ul {
+    padding-bottom: 50px;
+}
+
+.productGrid input {
+    padding-bottom: 50px;
+}
+
+.productGrid ul:first-of-type li {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.productGrid section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.productGrid article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.productGrid article p:first-of-type {
+    color: var(--product-bestseller);
+    font-weight: 500;
+}
+
+.productGrid article p:last-of-type::after {
+    content: '€149,99';
+    opacity: 0.5;
+    text-decoration-line: line-through;
+    padding-left: 10px;
+}
+
+/*************************/
+/*  MOBILE STYLING */
+/*************************/
+
+@media  {
+    
 }
