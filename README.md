@@ -65,6 +65,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  - Sommige beperkingen zijn niet zo erg op het web, maar sommige zijn bijna niet mee te werken. Bij het missen van een vinger of een hand is het nog redelijk makkelijk, maar wanneer je richting blindheid of motoriek gaat wordt het gelijk een stuk lastiger.
+  - Tabben door de website gaat heel gemakkelijk en duidelijk.
+  - Het is niet mogelijk om met mijn screenreader door de heading-levels heen te gaan. Dit is niet goed voor mensen die een screen-reader moeten gebruiken. Ondanks dat de heading levels 
+  - Links naar andere pagina's zijn duidelijk voor de gebruiker. Er kan wat gedaan worden met de gegeven informatie. aria labels zijn nuttig gebruikt.
+  - De focus state is heel duidelijk te zien. Nergens is er een issue met contrast. Slechtzienden zullen hier weinig tot geen moeite mee hebben.
+  - Er zijn weinig tot geen animaties op de website waardoor het voor de meerderheid van de gebruikers fijn te gebruiken is. Een prefers-reduced motion toepassing is niet per se nodig.
+  - Mensen met verschillende soorten kleurenblindheid kunnen nog heel goed van de Nike website gebruik maken. De kleuren zijn vooral wit, zwart, grijs. Verder hebben afbeeldingen veel kleuren, maar niet storend.
+  - Doordat de kleuren voornamelijk bestaan uit wit, zwart en grijs, zijn de contrasten prima om mee te werken. Bij het aanzetten van de verhoogde contrast instelling, is er niet een duidelijk verschil, omdat het contrast al relatief hoog ligt.
+  - De nike website passeert bijna alle checks van de WCAG checklist.
+
 </details>
 
 
@@ -80,9 +90,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/breakdown-dynamisch.jpg" height="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -95,7 +102,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+- Geen verbeterpunten. Mijn html ziet er top uit en ik ben al heel ver.
 
 
   ### Agenda voor meeting
@@ -111,10 +118,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Het gesprek was heel snel klaar
+  - Ik lig goed voor op schema
+  - HTML is netjes opgebouwd
+  - Vette dingen aan het doen
+  - Site ziet er top uit
 
 </details>
 
