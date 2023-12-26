@@ -515,7 +515,7 @@ footer {
     gap: 10px;
 }
 
-.productHeader ul li {
+.productHeader ul li button {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -538,8 +538,29 @@ footer {
     gap: 60px;
 }
 
-.productGrid aside {
+.productGrid>aside {
     width: 212px;
+    transition: transform 0.2s ease-in-out;
+    transform: translateX(0);
+}
+
+.productGrid>aside.slideOut {
+    transform: translateX(-150%);
+}
+
+/* Add this class to make the sidebar sticky when it slides out */
+.productGrid>aside.sticky {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.productHeader.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust z-index based on your needs */
 }
 
 .productGrid ul {
