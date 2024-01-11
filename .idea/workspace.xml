@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b64e5304-ff64-43c8-ba9c-e02428900782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/member1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/member2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/member3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/member4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/member5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/member6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/basketball.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/basketball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dance.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/dance.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fitness.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/fitness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/football.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/football.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/kids.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/kids.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/men.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/men.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/running.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/running.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/skateboarding.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/skateboarding.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tennis.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/tennis.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/women.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/women.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/yoga.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/yoga.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +103,9 @@
       <workItem from="1703943889683" duration="176000" />
       <workItem from="1704545658996" duration="22997000" />
       <workItem from="1704702417294" duration="117000" />
-      <workItem from="1704817697315" duration="10130000" />
+      <workItem from="1704817697315" duration="10158000" />
+      <workItem from="1704871349989" duration="145000" />
+      <workItem from="1704990437846" duration="1196000" />
     </task>
     <servers />
   </component>
