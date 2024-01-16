@@ -104,23 +104,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
 - Geen verbeterpunten. Mijn html ziet er top uit en ik ben al heel ver.
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Het gesprek was heel snel klaar
   - Ik lig goed voor op schema
-  - HTML is netjes opgebouwd
+  - HTML is netjes opgebouwd, goed ingesprongen en semantisch bijna helemaal correct
   - Vette dingen aan het doen
   - Site ziet er top uit
 
@@ -183,26 +172,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Bij mijn derde voortgangsgesprek was ik al bijna klaar met mijn website. Het is mij allemaal heel makkelijk afgegaan. Het enige is dat ik af en toe niet precies weet hoe ik mijn code het meest semantisch kan opbouwen. 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Mijn code ziet er netjes ingesprongen en opgebouwd uit.
+  - Ik moet nog iedere section van een heading voorzien. Dit is verplicht voor een section.
+  - Ik wist niet dat je geen pixels mocht gebruiken, maar alleen rem of em. Ik moet nu zorgen dat al mijn pixel units worden omgezet in rem of em.
+  - Ik moet nog best wat responsiveness toevoegen
+  - Voor een eventuele extra uitdaging kan ik kijken naar een CSS-only slider i.p.v. gebruik te maken van Javascript.
 
 </details>
 
