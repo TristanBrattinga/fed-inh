@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b64e5304-ff64-43c8-ba9c-e02428900782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/shoe1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/shoe9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/heromobile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -120,7 +112,8 @@
       <workItem from="1704990437846" duration="1452000" />
       <workItem from="1705263436928" duration="3540000" />
       <workItem from="1705307320923" duration="369000" />
-      <workItem from="1705344909088" duration="1930000" />
+      <workItem from="1705344909088" duration="1995000" />
+      <workItem from="1705423462128" duration="9735000" />
     </task>
     <servers />
   </component>

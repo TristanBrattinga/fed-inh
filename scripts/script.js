@@ -1,15 +1,28 @@
-const infoSlider    = document.querySelector('.infoSlider>div>ul')
-const stickyBar     = document.querySelector('.productHeader')
-const sidebar       = document.querySelector('.productGrid>aside')
-const sidebarButton = document.querySelector('.productHeader>ul>li>button')
-const header        = document.querySelector('header>nav')
-const topBar        = document.querySelector('header>section')
-const productSlider = document.querySelector('.productSlider ul:nth-child(2)')
-const product       = document.querySelector('.productSlider ul:nth-child(2) li')
-const prevButton    = document.querySelector('.productSlider li:last-child li:first-child button:first-child')
-const nextButton    = document.querySelector('.productSlider li:last-child li:last-child button:last-child')
-const shoeSlider    = document.querySelector('.shoeCategorySlider ul:nth-child(2)')
-const shoeListItems = shoeSlider.querySelectorAll('ul li')
+const infoSlider      = document.querySelector('.infoSlider>ul')
+const stickyBar       = document.querySelector('.productHeader')
+const sidebar         = document.querySelector('.productGrid>aside')
+const sidebarButton   = document.querySelector('.productHeader>ul>li>button')
+const header          = document.querySelector('header>nav')
+const topBar          = document.querySelector('header>section')
+const productSlider   = document.querySelector('.productSlider ul:nth-child(2)')
+const product         = document.querySelector('.productSlider ul:nth-child(2) li')
+const prevButton      = document.querySelector('.productSlider li:last-child li:first-child button:first-child')
+const nextButton      = document.querySelector('.productSlider li:last-child li:last-child button:last-child')
+const shoeSlider      = document.querySelector('.shoeCategorySlider ul:nth-child(2)')
+const shoeListItems   = shoeSlider.querySelectorAll('ul li')
+const sideBarMenu = document.querySelector('header > nav > aside');
+const closeMenuButton = document.querySelector('header > nav > aside > button');
+const openMenuButton = document.querySelector('header > nav > ul > li:last-child > ul > li:last-child');
+
+
+/////////////// MENU TOGGLE ///////////////
+const toggleMenu = () => {
+  sideBarMenu.classList.toggle('showMenu')
+}
+
+openMenuButton.addEventListener('click', toggleMenu)
+closeMenuButton.addEventListener('click', toggleMenu)
+
 
 // shoeListItems.forEach(function(item, index) {
 //   const span       = item.querySelector('figure span')
@@ -17,11 +30,7 @@ const shoeListItems = shoeSlider.querySelectorAll('ul li')
 //
 //   item.style.border = '2px solid red'
 // })
-//
-//
-//
-//
-//
+
 // const prevShoeButton = document.querySelector('.shoeCategorySlider button:first-child');
 // const nextShoeButton = document.querySelector('.shoeCategorySlider button:last-child');
 //
@@ -41,73 +50,49 @@ const shoeListItems = shoeSlider.querySelectorAll('ul li')
 //   });
 // });
 
-
-
-
-
-
-
-
-
-let currentIndex = 0
-const maxIndex   = productSlider.children.length - 1
-
-const updateSlider = () => {
-  productSlider.scrollLeft = currentIndex * 500
-}
-
-const updateButtons = () => {
-  if (currentIndex === 0) {
-    prevButton.classList.add('disabled')
-    nextButton.classList.remove('disabled')
-  } else if (currentIndex === maxIndex) {
-    prevButton.classList.remove('disabled')
-    nextButton.classList.add('disabled')
-  } else {
-    prevButton.classList.remove('disabled')
-    nextButton.classList.remove('disabled')
-  }
-}
-
-updateButtons()
-
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + (maxIndex + 1)) % (maxIndex + 1)
-  updateSlider()
-  updateButtons()
-})
-
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % (maxIndex + 1)
-  updateSlider()
-  updateButtons()
-})
-
-
 // let currentIndex = 0
-//
-// const nextSlide = () => {
-//   currentIndex = (currentIndex + 1) % infoSlider.children.length
-//   updateSlider()
-// }
-//
+// const maxIndex   = productSlider.children.length - 1
+
 // const updateSlider = () => {
-//   const translateValue    = -currentIndex * 100 + '%'
-//   infoSlider.style.transition = 'transform 0.6s'
-//   infoSlider.style.transform  = 'translateX(' + translateValue + ')'
+//   productSlider.scrollLeft = currentIndex * 500
 // }
 //
-// setInterval(nextSlide, 6000)
+// const updateButtons = () => {
+//   if (currentIndex === 0) {
+//     prevButton.classList.add('disabled')
+//     nextButton.classList.remove('disabled')
+//   } else if (currentIndex === maxIndex) {
+//     prevButton.classList.remove('disabled')
+//     nextButton.classList.add('disabled')
+//   } else {
+//     prevButton.classList.remove('disabled')
+//     nextButton.classList.remove('disabled')
+//   }
+// }
 //
-// // const handleScrollDirection = () => {
-// //   const currentPosition = window.scrollY
-// //
-// //   if (currentPosition >= 164) {
-// //     stickyBar.classList.add('sticky')
-// //   } else {
-// //     stickyBar.classList.remove('sticky')
-// //   }
-// // }
+// updateButtons()
+//
+// prevButton.addEventListener('click', () => {
+//   currentIndex = (currentIndex - 1 + (maxIndex + 1)) % (maxIndex + 1)
+//   updateSlider()
+//   updateButtons()
+// })
+//
+// nextButton.addEventListener('click', () => {
+//   currentIndex = (currentIndex + 1) % (maxIndex + 1)
+//   updateSlider()
+//   updateButtons()
+// })
+
+// const handleScrollDirection = () => {
+//   const currentPosition = window.scrollY
+//
+//   if (currentPosition >= 164) {
+//     stickyBar.classList.add('sticky')
+//   } else {
+//     stickyBar.classList.remove('sticky')
+//   }
+// }
 //
 // let previousScrollPosition = 0
 //
@@ -142,6 +127,6 @@ nextButton.addEventListener('click', () => {
 // }
 //
 // sidebarButton.addEventListener('click', slideOutSidebar)
-//
-//
-//
+
+
+
