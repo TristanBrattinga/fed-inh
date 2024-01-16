@@ -5,32 +5,69 @@ const sidebarButton = document.querySelector('.productHeader>ul>li>button')
 const header        = document.querySelector('header>nav')
 const topBar        = document.querySelector('header>section')
 const productSlider = document.querySelector('.productSlider ul:nth-child(2)')
-const product = document.querySelector('.productSlider ul:nth-child(2) li')
+const product       = document.querySelector('.productSlider ul:nth-child(2) li')
 const prevButton    = document.querySelector('.productSlider li:last-child li:first-child button:first-child')
 const nextButton    = document.querySelector('.productSlider li:last-child li:last-child button:last-child')
+const shoeSlider    = document.querySelector('.shoeCategorySlider ul:nth-child(2)')
+const shoeListItems = shoeSlider.querySelectorAll('ul li')
+
+// shoeListItems.forEach(function(item, index) {
+//   const span       = item.querySelector('figure span')
+//   span.textContent = (index + 1) + '/' + shoeListItems.length
+//
+//   item.style.border = '2px solid red'
+// })
+//
+//
+//
+//
+//
+// const prevShoeButton = document.querySelector('.shoeCategorySlider button:first-child');
+// const nextShoeButton = document.querySelector('.shoeCategorySlider button:last-child');
+//
+// const itemWidth = shoeSlider.firstElementChild.offsetWidth; // Assumes all items have the same width
+//
+// prevShoeButton.addEventListener('click', () => {
+//   shoeSlider.scrollBy({
+//     left: itemWidth,
+//     behavior: 'smooth'
+//   });
+// });
+//
+// nextShoeButton.addEventListener('click', () => {
+//   shoeSlider.scrollBy({
+//     left: itemWidth,
+//     behavior: 'smooth'
+//   });
+// });
+
+
+
+
+
+
+
+
 
 let currentIndex = 0
 const maxIndex   = productSlider.children.length - 1
 
 const updateSlider = () => {
-  console.log(productSlider.clientWidth)
   productSlider.scrollLeft = currentIndex * 500
 }
 
-console.log(product.clientWidth)
-
 const updateButtons = () => {
   if (currentIndex === 0) {
-    prevButton.classList.add('disabled');
-    nextButton.classList.remove('disabled');
+    prevButton.classList.add('disabled')
+    nextButton.classList.remove('disabled')
   } else if (currentIndex === maxIndex) {
-    prevButton.classList.remove('disabled');
-    nextButton.classList.add('disabled');
+    prevButton.classList.remove('disabled')
+    nextButton.classList.add('disabled')
   } else {
-    prevButton.classList.remove('disabled');
-    nextButton.classList.remove('disabled');
+    prevButton.classList.remove('disabled')
+    nextButton.classList.remove('disabled')
   }
-};
+}
 
 updateButtons()
 
