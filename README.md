@@ -217,13 +217,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
-
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.seeratawan.me/blog/why-you-should-move-from-px-to-rem-in-css/#:~:text=However%2C%20if%20you%20size%20text,based%20on%20each%20user's%20needs.)https://www.seeratawan.me/blog/why-you-should-move-from-px-to-rem-in-css/#:~:text=However%2C%20if%20you%20size%20text,based%20on%20each%20user's%20needs.
 
 </details>
