@@ -1,8 +1,9 @@
+const body = document.body
 const infoSlider      = document.querySelector('.infoSlider>ul')
 const stickyBar       = document.querySelector('.productHeader')
 const sidebar         = document.querySelector('.productGrid>aside')
 const sidebarButton   = document.querySelector('.productHeader>ul>li>button')
-const header          = document.querySelector('header>nav')
+// const header          = document.querySelector('header>nav')
 const topBar          = document.querySelector('header>section')
 const productSlider   = document.querySelector('.productSlider ul:nth-child(2)')
 const product         = document.querySelector('.productSlider ul:nth-child(2) li')
@@ -14,14 +15,20 @@ const sideBarMenu = document.querySelector('header > nav > aside');
 const closeMenuButton = document.querySelector('header > nav > aside > button');
 const openMenuButton = document.querySelector('header > nav > ul > li:last-child > ul > li:last-child');
 
-
 /////////////// MENU TOGGLE ///////////////
 const toggleMenu = () => {
-  sideBarMenu.classList.toggle('showMenu')
+  sideBarMenu.classList.toggle('showMenu');
+  body.classList.toggle('showMenu');
 }
 
-openMenuButton.addEventListener('click', toggleMenu)
-closeMenuButton.addEventListener('click', toggleMenu)
+openMenuButton.addEventListener('click', toggleMenu);
+closeMenuButton.addEventListener('click', toggleMenu);
+
+body.addEventListener('click', (event) => {
+  if (event.target === body) {
+    toggleMenu();
+  }
+});
 
 
 // shoeListItems.forEach(function(item, index) {

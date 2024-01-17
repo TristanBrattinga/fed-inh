@@ -1,5 +1,5 @@
 - Maybe css only sliders (https://css-tricks.com/inclusively-hidden/)
 - Check headings in every section (https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.nike.com%2Fnl%2F&showoutline=yes)
-- Remove px and turn into rem or em
 - Responsiveness
 - remove styling from JS
+- Alles omzetten naar variabelen
