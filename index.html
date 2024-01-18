@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta content="jouw naam" name="author">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-
-    <title>Nike. Just Do It. Nike NL</title>
-
+    <meta name="description"
+          content="Nike inspireert alle atleten ter wereld met innovatieve producten, ervaringen en services.">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link href="styles/style.css" rel="stylesheet">
+    <title>Nike. Just Do It. Nike NL</title>
 </head>
-
 <body>
 <header>
-    <!--TOP BAR-->
     <a href="#mainContent">Ga door naar hoofdcontent</a>
     <section>
         <ul>
@@ -92,10 +91,10 @@
                 </li>
             </ul>
             <article>
-                <span>
-                    Word Nike member en geniet van de beste producten, inspiratie en verhalen op het gebied van sport.
-                    <a>Meer info</a>
-                </span>
+                        <span>
+                            Word Nike member en geniet van de beste producten, inspiratie en verhalen op het gebied van sport.
+                            <a>Meer info</a>
+                        </span>
             </article>
             <ul>
                 <li><a>Join Us</a></li>
@@ -854,6 +853,50 @@
             </li>
         </ul>
     </section>
+    <section class="modal">
+        <article>
+            <button>
+                <svg aria-hidden="true" class="pre-close-icon" focusable="false" viewBox="0 0 24 24" role="img"
+                     width="24px"
+                     height="24px" fill="none">
+                    <path stroke="currentColor" stroke-width="1.5"
+                          d="M18.973 5.027L5.028 18.972M5.027 5.027l13.945 13.945"></path>
+                </svg>
+            </button>
+            <img src="/images/swoosh_black.png" alt="Nike Black Swoosh Logo" />
+            <h6>Krijg als eerste het laatste nieuws</h6>
+            <p>Meld je aan voor Nike e-mails en krijg als eerste inspirerende content, nieuws en exclusieve aanbiedingen
+                te
+                zien.
+            </p>
+            <form>
+                <ul>
+                    <li>
+                        <label for="Email">E-mailadres*</label>
+                        <input type="email" id="Email" required placeholder="E-mailadres" />
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="dateOfBirth">Geboortedatum*</label>
+                                <input type="date" id="dateOfBirth" required />
+                            </li>
+                            <li>
+                                <label for="shoppinPreferences">Shopvoorkeuren*</label>
+                                <select id="shoppinPreferences">
+                                    <option value="Kies" selected>Kies</option>
+                                    <option value="Heren">Heren</option>
+                                    <option value="Dames">Dames</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button>Meld je aan</button>
+            </form>
+            <p>Door je aan te melden ga je akkoord met het Privacybeleid en de Gebruiksvoorwaarden van Nike.</p>
+        </article>
+    </section>
 </main>
 <footer>
     <ul>
@@ -920,5 +963,4 @@
 
 <script defer src="scripts/script.js"></script>
 </body>
-
 </html>
