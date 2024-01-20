@@ -1,34 +1,62 @@
-const body = document.body
-const infoSlider      = document.querySelector('.infoSlider>ul')
-const stickyBar       = document.querySelector('.productHeader')
-const sidebar         = document.querySelector('.productGrid>aside')
-const sidebarButton   = document.querySelector('.productHeader>ul>li>button')
+const body             = document.body
+const infoSlider       = document.querySelector('.infoSlider>ul')
+const stickyBar        = document.querySelector('.productHeader')
+const sidebar          = document.querySelector('.productGrid>aside')
+const sidebarButton    = document.querySelector('.productHeader ul li button')
+const productGrid = document.querySelector('.productGrid>section')
 // const header          = document.querySelector('header>nav')
-const topBar          = document.querySelector('header>section')
-const productSlider   = document.querySelector('.productSlider ul:nth-child(2)')
-const product         = document.querySelector('.productSlider ul:nth-child(2) li')
-const prevButton      = document.querySelector('.productSlider li:last-child li:first-child button:first-child')
-const nextButton      = document.querySelector('.productSlider li:last-child li:last-child button:last-child')
-const shoeSlider      = document.querySelector('.shoeCategorySlider ul:nth-child(2)')
-const shoeListItems   = shoeSlider.querySelectorAll('ul li')
-const sideBarMenu = document.querySelector('header > nav > aside');
-const closeMenuButton = document.querySelector('header > nav > aside > button');
-const openMenuButton = document.querySelector('header > nav > ul > li:last-child > ul > li:last-child');
+const topBar           = document.querySelector('header>section')
+const productSlider    = document.querySelector('.productSlider ul:nth-child(2)')
+const product          = document.querySelector('.productSlider ul:nth-child(2) li')
+const prevButton       = document.querySelector('.productSlider li:last-child li:first-child button:first-child')
+const nextButton       = document.querySelector('.productSlider li:last-child li:last-child button:last-child')
+const shoeSlider       = document.querySelector('.shoeCategorySlider ul:nth-child(2)')
+// const shoeListItems    = shoeSlider.querySelectorAll('ul li')
+const sideBarMenu      = document.querySelector('header > nav > aside')
+const closeMenuButton  = document.querySelector('header > nav > aside > button')
+const openMenuButton   = document.querySelector('header > nav > ul > li:last-child > ul > li:last-child')
+const modal            = document.querySelector('.modal')
+const closeModalButton = document.querySelector('.modal button')
 
 /////////////// MENU TOGGLE ///////////////
 const toggleMenu = () => {
-  sideBarMenu.classList.toggle('showMenu');
-  body.classList.toggle('showMenu');
+  sideBarMenu.classList.toggle('showMenu')
+  body.classList.toggle('showMenu')
 }
 
-openMenuButton.addEventListener('click', toggleMenu);
-closeMenuButton.addEventListener('click', toggleMenu);
+openMenuButton.addEventListener('click', toggleMenu)
+// closeMenuButton.addEventListener('click', toggleMenu)
 
 body.addEventListener('click', (event) => {
   if (event.target === body) {
-    toggleMenu();
+    toggleMenu()
   }
-});
+})
+
+const toggleModal = () => {
+  modal.classList.toggle('showModal')
+  body.classList.toggle('showMenu')
+}
+
+// closeModalButton.addEventListener('click', toggleModal)
+
+if (localStorage.getItem('modalShown') !== 'true') {
+  setTimeout(() => {
+    toggleModal()
+    localStorage.setItem('modalShown', 'true')
+  }, 5000)
+}
+
+/////////////// SIDEBAR TOGGLE ///////////////
+
+const slideOutSidebar = () => {
+  sidebar.classList.toggle('slideOut')
+  productGrid.classList.toggle('slideOut')
+}
+
+sidebarButton.addEventListener('click', slideOutSidebar)
+
+
 
 
 // shoeListItems.forEach(function(item, index) {
@@ -127,13 +155,5 @@ body.addEventListener('click', (event) => {
 //
 // }
 //
+//
 // window.addEventListener('scroll', handleScroll)
-//
-// const slideOutSidebar = () => {
-//   sidebar.classList.toggle('slideOut')
-// }
-//
-// sidebarButton.addEventListener('click', slideOutSidebar)
-
-
-
