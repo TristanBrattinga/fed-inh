@@ -961,15 +961,10 @@ footer {
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  lalalalal
+  Bij mijn tweede voortgangsgesprek ben ik niet heel veel verder gekomen dan ik bij mijn eerste gesprek was. Ik ben vooral verder gegaan aan mijn tweede pagina en heb wat javascript toegevoegd. Omdat ik al best ver ben gekomen heb ik mijn website een beetje laten liggen en niet super veel tijd in gestoken. Verder is alles wel gewoon nog goed en ietsjes uitegbreider. Ik moet na deze weken weer wat meer tijd aan mijn website besteden.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - 
 
 </details>
 
