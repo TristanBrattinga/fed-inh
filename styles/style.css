@@ -110,6 +110,28 @@ a {
     color: black;
 }
 
+a:focus {
+    border: 0.1rem solid black;
+    outline-color: black;
+    outline-offset: 0.25rem ;
+}
+
+button:focus {
+    outline: 1px solid black;
+}
+
+span:focus {
+    outline: 0.125rem solid black;
+}
+
+svg:focus {
+    outline: black auto 5px;
+}
+
+input:focus {
+    outline: 0.125rem solid black;
+}
+
 svg:hover {
     opacity: 0.6;
 }
@@ -229,6 +251,10 @@ header section ul li a {
     border-right: 0.125rem solid #111111;
     padding-right: 0.75rem;
     margin-right: 0.75rem;
+}
+
+header section ul li a:hover {
+    text-decoration: underline;
 }
 
 header section ul li:last-child a {
@@ -1315,7 +1341,10 @@ header nav > ul > li:last-child {
     color: var(--text-lightgrey);
     font-size: 1rem;
     line-height: 1.5rem;
+}
 
+.merchMenu a:hover {
+    text-decoration: underline;
 }
 
 .merchMenu h5 {
