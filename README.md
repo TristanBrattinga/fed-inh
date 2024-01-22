@@ -4505,19 +4505,22 @@ sidebarButton.addEventListener('click', slideOutSidebar)
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  Omdat ik al als frontender werkzaam ben, heb ik niet super veel geleerd als toen ik dit vak voor het eerst volgde. Desalniettemin heb ik zeker wat kleine puntjes opgestoken, waar ik wat aan heb en mee zal nemen in mijn carrière als front-end developer. Bijvoorbeeld: <br/> 
+  <ul>
+    <li>Hoe sections en articles samen gebruikt en gemixt kunnen worden;</li>
+    <li>Het voordeel van relative units zoals rem en em  t.o.v. absolute pixel units;</li>
+    <li>Dat styling toevoegen van JavaScript een bad practice is bij het gebruik van vanilla JS;</li>
+    <li>Dat het semantisch vereist is dat iedere section een heading heeft;</li>
+  </ul>
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het enige waar ik echt moeite mee had was de semantiek. Soms te moeilijk nadenken waarom iets niet gewoon een article, of ul zou kunnen zijn. Verder heb ik ook een beetje moeite gehad met het inplannen van mijn werk, maar dit is iets wat niet met dit vak te maken heeft, maar hoe ik mijn tijd aan school besteed :sweat_smile:.
+  
+  Verder heb ik door te weinig tijd (of te weinig plannen???), helaas niet het dropdown menu kunnen maken. Deze had ik graag nog erin willen stoppen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -4527,7 +4530,7 @@ sidebarButton.addEventListener('click', slideOutSidebar)
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
+  <summary>Bronnen</summary>
   1. https://www.seeratawan.me/blog/why-you-should-move-from-px-to-rem-in-css/#:~:text=However%2C%20if%20you%20size%20text,based%20on%20each%20user's%20needs.)https://www.seeratawan.me/blog/why-you-should-move-from-px-to-rem-in-css/#:~:text=However%2C%20if%20you%20size%20text,based%20on%20each%20user's%20needs.
   2. https://stackoverflow.com/questions/7549561/difference-between-section-vs-article-elements-in-html
 
