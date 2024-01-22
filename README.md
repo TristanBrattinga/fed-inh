@@ -4552,6 +4552,7 @@ Wat ik zelf wel heel nice vind is dat ik de newsletter modal heb gemaakt. Deze w
   <li>https://stackoverflow.com/questions/47409585/using-rem-units-in-media-queries-and-as-width</li>
    <li>https://stackoverflow.com/questions/37114840/css-to-change-image-url</li>
    <li>https://stackoverflow.com/questions/51545612/making-an-array-of-html-elements</li>
+<li>https://www.freecodecamp.org/news/what-is-rem-in-css-rem-unit-font-size-padding-height-and-more/#:~:text=For%20the%20padding%20of%20the,size%20of%20the%20root%20element.</li>
 </ol>
 
 
