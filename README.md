@@ -2181,13 +2181,13 @@ window.addEventListener('scroll', handleScrollDirection)
 
 
 
-## Voortgang 3 (week 4)
+## Voortgang 3 (11 januari)
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Mijn website, al zeg ik het zelf, ziet er heel nice uit. Je zou bijna niet het verschil zien met de echte nike website :stuck_out_tongue_winking_eye:
+  Mijn website, al zeg ik het zelf, ziet er heel nice uit. Je zou bijna niet het verschil zien met de echte nike website :stuck_out_tongue_winking_eye:. Ik ben heel ver gekomen en ik heb veel onderdelen geïntegreerd. 
 
   ### Verslag van meeting
 
