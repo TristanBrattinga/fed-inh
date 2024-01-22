@@ -98,7 +98,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Doordat ik al veel ervaring heb met front-end development en ook al werkzaam ben als frontender, ben ik al heel ver voor de eerste week. Ik heb eerst al mijn basis HTML voor de twee pagina's opgebouwd aan de hand van mijn breakdown schets. Ik heb de dynamische gedeeltes als het mobiele menu, dropdown menu en filter sidebar nog even achterwege gelaten. Ik wilde deze componenten pas later integreren als nice to have's. Waarschijnlijk met hoe erg ik voor loop zal ik dit snel oppakken. Het begin proces van mijn website verliep allemaal heel makkelijk en zonder problemen. Het enige waar ik af en toe een beetje over twijfel is wanneer iets een article, section of figure is. Dit is een puntje wat ik tijdens mijn gesprek zal gaan vragen als feedback op mijn code. Semantiek is misschien het enige waar ik af en toe een beetje moeite mee heb. Verder gaat alle techniek, logica en organistie hartstikke goed. Ik werk zelf al heel lang en veel met git en github dus dit was voor mij ook helemaal geen moeite. Ik heb bij mijn eerste voortgangsgesprek zeventien commits gemaakt. Een aantal blocks van mijn code op dit moment:
+  Doordat ik al veel ervaring heb met front-end development en ook al werkzaam ben als frontender, ben ik al heel ver voor de eerste week. Ik heb eerst al mijn basis HTML voor de eerste pagina opgebouwd aan de hand van mijn breakdown schets. Ik heb de dynamische gedeeltes zoals het mobiele menu, dropdown menu en filter sidebar nog even achterwege gelaten. Ik wilde deze componenten pas later integreren als nice to have's. Waarschijnlijk met hoe erg ik voor loop zal ik dit snel oppakken. Het begin proces van mijn website verliep allemaal heel makkelijk en zonder problemen. Het enige waar ik af en toe een beetje over twijfel is wanneer iets een article, section of figure is. Dit is een puntje wat ik tijdens mijn gesprek zal gaan vragen als feedback op mijn code. Semantiek is misschien het enige waar ik af en toe een beetje moeite mee heb. Verder gaat alle techniek, logica en organistie hartstikke goed. Ik werk zelf al heel lang en veel met git en github dus dit was voor mij ook helemaal geen moeite. Ik heb bij mijn eerste voortgangsgesprek zeventien commits gemaakt. Een aantal blocks van mijn code op dit moment:
 
 <details>
   <summary><strong>HTML</strong></summary>
@@ -951,9 +951,7 @@ footer {
 
   Hieronder zijn screenshots te zien van de huidige staat van mijn website:
 
-  <img src="" alt="">
-
-  <img src="" alt="">
+  <img src="readme-images/website-30nov.png" alt="Screenshot of the first page">
 </details>
 
 
@@ -966,7 +964,7 @@ footer {
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Bij mijn tweede voortgangsgesprek ben ik niet heel veel verder gekomen dan ik bij mijn eerste gesprek was. Ik heb wat kleine tweaks gemaakt aan mijn tweede pagina en heb wat javascript toegevoegd. Omdat ik al best ver ben gekomen in de eerste paar weken, heb ik mijn website een beetje laten liggen en er niet super veel tijd aan besteed. Verder is mijn code nog in orde en ietsjes uitegbreider. Ik moet na deze weken weer wat meer tijd aan mijn website besteden. Hieronder mijn code op dit moment:
+  Bij mijn tweede voortgangsgesprek ben ik niet heel veel verder gekomen dan ik bij mijn eerste gesprek was. Als je de foto's vergelijkt met de eerste week zit er bijna geen verschil in de eerste pagina. Ik ben eigenlijk alleen begonnen aan het opzetten van mijn tweede pagina. Ik heb hier en daar misschien wat kleine tweaks gemaakt aan de eerste pagina. Ook heb ik wat javascript toegevoegd voor de functionaliteit van de tweede pagina. Omdat ik al best ver ben gekomen in de eerste paar weken, heb ik mijn website een beetje laten liggen en er niet super veel tijd aan besteed. Verder is mijn code nog in orde en ietsjes uitgebreider. Ik moet na deze weken weer wat meer tijd aan mijn website besteden. Hieronder mijn code op dit moment:
 
   <details>
     <summary><strong>HTML</strong></summary>
@@ -2155,9 +2153,11 @@ window.addEventListener('scroll', handleScrollDirection)
   </details>
 
   ### Verslag van meeting
-  Ik ben heel goed opweg met mijn website. Er zijn niet echt puntjes aan te merken op mijn progressie en mijn gebruikte technieken. Mijn HTML ziet er netjes uit. Het enige waar ik op moet letten is, waar ik de juiste headings moet gebruiken. Op de originele nike website zijn de headings niet logisch opgebouwd en worden soms de verkeerde teksten verkozen tot een heading level. Hier moet ik dus niet vanuit gaan. Ik moet zelf goed nadenken welke tekst het meeste heeft te vertellen als een heading level. Ik moet nog wel een flinke stap gaan maken met responsiveness, want hier heb ik nog niks aan gedaan. Hieronder de screenshots van de huidige staat van mijn twee pagina's:
+  Ik ben heel goed op weg met mijn website. Er zijn niet echt puntjes aan te merken op mijn progressie en mijn gebruikte technieken. Mijn HTML ziet er netjes uit. Het enige waar ik op moet letten is, waar ik de juiste headings moet gebruiken. Op de originele nike website zijn de headings niet logisch opgebouwd en worden soms de verkeerde teksten verkozen tot een heading level. Hier moet ik dus niet vanuit gaan. Ik moet zelf goed nadenken welke tekst het meeste heeft te vertellen als een heading level. Ik moet nog wel een flinke stap gaan maken met responsiveness, want hier heb ik nog niks aan gedaan. Hieronder de screenshots van de huidige staat van mijn twee pagina's:
   
   <img src="readme-images/website-14dec.png" alt="Screenshot of the first page" />
+
+  ***
 
   <img src="readme-images/website-14dec2.png" alt="Screenshot of the second page" />
 
@@ -2187,7 +2187,7 @@ window.addEventListener('scroll', handleScrollDirection)
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Bij mijn derde voortgangsgesprek was ik al bijna klaar met mijn website. Het is mij allemaal heel makkelijk afgegaan. Het enige is dat ik af en toe niet precies weet hoe ik mijn code het meest semantisch kan opbouwen. 
+  Mijn website, al zeg ik het zelf, ziet er heel nice uit. Je zou bijna niet het verschil zien met de echte nike website :stuck_out_tongue_winking_eye:
 
   ### Verslag van meeting
 
