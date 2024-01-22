@@ -38,7 +38,7 @@ const toggleModal = () => {
   body.classList.toggle('showMenu')
 }
 
-// closeModalButton.addEventListener('click', toggleModal)
+closeModalButton.addEventListener('click', toggleModal)
 
 if (localStorage.getItem('modalShown') !== 'true') {
   setTimeout(() => {

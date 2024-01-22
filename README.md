@@ -4486,7 +4486,7 @@ sidebarButton.addEventListener('click', slideOutSidebar)
 
   ### Verslag van meeting
 
-  Bij deze meeting heb ik best wat feedback puntjes gekregen. Ik wist niet dat je geen gebruik mocht maken van pixels. Dit is het gene wat ik alleen maar heb gebruikt. Dit moet allemaal aangepast worden naar rem of em. Marten heeft mij het voordeel hiervan uitgelegd en ik ga mijzelf hier ook nog wat meer over inlezen. Ook is het niet toegestaan om styling toe te passen door middel van JavaScipt. Dit heb ik gelukkig niet super veel gedaan dus dat valt redelijk snel om te zetten in het gebruik van add/remove classList. Ook is het semantisch vereist om iedere section een heading te geven en dit mis ik ook nog bij sommige sections. Zoals ik al had verwacht moet ik zeker nog wat aan responsiveness doen wil ik dit onderdeel halen. Ook zou ik voor een eventuele verdere uitdaging nog kunnen kijken naar CSS-only sliders.
+  Bij deze meeting heb ik best wat feedback puntjes gekregen. Ik wist niet dat je geen gebruik mocht maken van pixels. Dit is het gene wat ik alleen maar heb gebruikt. Dit moet allemaal aangepast worden naar rem of em. Marten heeft mij het voordeel hiervan uitgelegd en ik ga mijzelf hier ook nog wat meer over inlezen. Ook is het niet toegestaan om styling toe te passen door middel van JavaScipt. Dit heb ik gelukkig niet super veel gedaan dus dat valt redelijk snel om te zetten in het gebruik van add/remove classList. Verder had ik dit ingezet voor de animatie van mijn infoSlider, maar met wat kleine pointers van Marten en Quinten heb ik dit met keyframes gedaan en was er uiteindelijk helemaal geen JavaScript voor nodig. Dit is soms ook een puntje waar ik op moet letten. Ik wil graag snel naar JavaScript toe stappen terwijl iets misschien ook met CSS valt op te lossen. Ook is het semantisch vereist om iedere section een heading te geven en dit mis ik ook nog bij sommige sections. Zoals ik al had verwacht moet ik zeker nog wat aan responsiveness doen wil ik dit onderdeel halen. Ook zou ik voor een eventuele verdere uitdaging nog kunnen kijken naar CSS-only sliders.
 
   <img src="readme-images/website-11jan.png" alt="Screenshot of page 1">
 
@@ -4499,22 +4499,34 @@ sidebarButton.addEventListener('click', slideOutSidebar)
 
 
 
-## Eindgesprek (week 5)
+## Eindgesprek (24 januari)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
 
+<img src="readme-images/mobile-menu.png" alt="Screenshot van het mobile menu">
+<img src="readme-images/almost-final.png" alt="Screenshot full page">
+
 
   ### Dit ging goed/Heb ik geleerd: 
-  Omdat ik al als frontender werkzaam ben, heb ik niet super veel geleerd als toen ik dit vak voor het eerst volgde. Desalniettemin heb ik zeker wat kleine puntjes opgestoken, waar ik wat aan heb en mee zal nemen in mijn carrière als front-end developer. Bijvoorbeeld: <br/> 
+  Omdat ik al als frontender werkzaam ben, heb ik niet super veel geleerd net als toen ik dit vak voor het eerst volgde. Desalniettemin heb ik zeker wat kleine puntjes opgestoken, waar ik wat aan heb en mee zal nemen in mijn carrière als front-end developer. Bijvoorbeeld: <br/> 
   <ul>
     <li>Hoe sections en articles samen gebruikt en gemixt kunnen worden;</li>
     <li>Het voordeel van relative units zoals rem en em  t.o.v. absolute pixel units;</li>
-    <li>Dat styling toevoegen van JavaScript een bad practice is bij het gebruik van vanilla JS;</li>
+    <li>Dat styling toevoegen van JavaScript een bad practice is bij het gebruik van vanilla JS. Bij het gebruik van frameworks is dit een ander verhaal;</li>
     <li>Dat het semantisch vereist is dat iedere section een heading heeft;</li>
+    <li>Goed nadenken of ik iets ook met alleen CSS kan oplossen en niet gelijk gebruik maken van JavaScipt;</li>
   </ul>
+
+Wat ik zelf wel heel nice vind is dat ik de newsletter modal heb gemaakt. Deze wordt 1x getoond na een timeout van 5 seconden. Ik heb hier een key en value aan verbonden en deze sla ik op in de localStorage. Zo wordt er bijgehouden of de modal al een keer is getoond. Ook als je op de tweede pagina komt. In gelijkenis met de nike website wordt deze ook maar 1x getoond. Zie hieronder een screenshot van de JavaScript en het resultaat:
+
+<img src="readme-images/modal-code.png" alt="Javascript modal code">
+
+<img src="readme-images/modal-browser.png" alt="Screenshot of the item in the localStorage">
+
+<img src="readme-images/modal-website.png" alt="Website screenshot of the modal">
 
   ### Dit was lastig/Is niet gelukt:
   Het enige waar ik echt moeite mee had was de semantiek. Soms te moeilijk nadenken waarom iets niet gewoon een article, of ul zou kunnen zijn. Verder heb ik ook een beetje moeite gehad met het inplannen van mijn werk, maar dit is iets wat niet met dit vak te maken heeft, maar hoe ik mijn tijd aan school besteed :sweat_smile:.
