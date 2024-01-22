@@ -920,7 +920,6 @@ footer {
 }
   ```
 </details>
-
 <details>
   <summary><strong>JS</strong></summary>
   
@@ -948,7 +947,13 @@ footer {
   ### Verslag van meeting
   Mijn eerste voortgangsgesprek verliep heel soepel en was heel snel klaar. Ik heb mijn website doorgenomen met medestudent/student-assistent/vriend Quinten Kok. Ik heb hem leren kennen tijdens blok Tech in jaar 2. Wij kunnen het erg goed vinden en hij was zeer onder de indruk van mijn progressie met de website en überhaupt mijn kennis van front-end dev. Wij hebben samen de html, css en javascript doorgenomen en dit zag er allemaal top uit. Hij zei dat ik goed voor lag op schema en dat mijn html netjes opgebouwd en goed ingesprongen is. Ook qua semantiek zit ik in de goede richting alleen moet ik ervoor zorgen dat ik, wat ik zelf ook al dacht, goed moet opletten wanneer je een figure, article of section gebruikt. Ik dacht dat er bepaalde restricties op section en article gebruik zat, maar deze mogen op wat voor manier dan ook met elkaar worden gebruikt. Een voorbeeld hiervan:
 
-  <img src='readme-images/sectionvsarticle.jpg' alt='~Graphic of nesting abilities for sections and articles' width='375px'/>  
+  <img src='readme-images/sectionvsarticle.jpg' alt='Graphic of nesting abilities for sections and articles' width='375px'/>
+
+  Hieronder zijn screenshots te zien van de huidige staat van mijn website:
+
+  <img src="" alt="">
+
+  <img src="" alt="">
 </details>
 
 
@@ -1559,7 +1564,6 @@ footer {
 
 </details>
 </details>
-
   <details>
   <summary><strong>CSS</strong></summary>
 
@@ -2114,7 +2118,6 @@ footer {
   ```
   
 </details>
-
   <details>
     <summary><strong>JS</strong></summary>
 
@@ -2152,7 +2155,11 @@ window.addEventListener('scroll', handleScrollDirection)
   </details>
 
   ### Verslag van meeting
-  Ik ben heel goed opweg met mijn website. Er zijn niet echt puntjes aan te merken op mijn progressie en mijn gebruikte technieken. Mijn HTML ziet er netjes uit. Het enige waar ik op moet letten is, waar ik de juiste headings moet gebruiken. Op de originele nike website zijn de headings niet logisch opgebouwd en worden soms de verkeerde teksten verkozen tot een heading level. Hier moet ik dus niet vanuit gaan. Ik moet zelf goed nadenken welke tekst het meeste heeft te vertellen als een heading level. Ik moet nog wel een flinke stap gaan maken met responsiveness, want hier heb ik nog niks aan gedaan.
+  Ik ben heel goed opweg met mijn website. Er zijn niet echt puntjes aan te merken op mijn progressie en mijn gebruikte technieken. Mijn HTML ziet er netjes uit. Het enige waar ik op moet letten is, waar ik de juiste headings moet gebruiken. Op de originele nike website zijn de headings niet logisch opgebouwd en worden soms de verkeerde teksten verkozen tot een heading level. Hier moet ik dus niet vanuit gaan. Ik moet zelf goed nadenken welke tekst het meeste heeft te vertellen als een heading level. Ik moet nog wel een flinke stap gaan maken met responsiveness, want hier heb ik nog niks aan gedaan. Hieronder de screenshots van de huidige staat van mijn twee pagina's:
+  
+  <img src="readme-images/website-14dec.png" alt="Screenshot of the first page" />
+
+  <img src="readme-images/website-14dec2.png" alt="Screenshot of the second page" />
 
 </details>
 
