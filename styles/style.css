@@ -756,6 +756,13 @@ header nav > ul > li:last-child {
     position: absolute;
     bottom: 3.375rem;
     left: 2.25rem;
+    background: rgba(0, 0, 0, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
 }
 
 @media (max-width: 58.375rem) {
@@ -763,6 +770,14 @@ header nav > ul > li:last-child {
         width: 100%;
         height: auto;
         content: url("/images/heromobile.png");
+    }
+
+    .hero figure figcaption {
+        left: 0;
+    }
+
+    .hero figcaption p:first-of-type {
+        font-size: 2rem;
     }
 }
 
@@ -792,7 +807,7 @@ header nav > ul > li:last-child {
 }
 
 .releasedSlider img {
-    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -894,6 +909,35 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
+@media (max-width: 768px) {
+    .releasedSlider ul {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .releasedSlider ul:nth-child(2) {
+        padding-inline-start: 1.5rem;
+        padding-left: 1.5rem;
+        scroll-padding-left: 1.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .releasedSlider ul li ul li button {
+        display: none;
+    }
+
+    .releasedSlider img {
+        max-width: 300px;
+    }
+
+    .releasedSlider h4 {
+        margin: 1rem 0 0 0;
+    }
+
+    .releasedSlider ul li a figure {
+        padding-bottom: 1rem;
+    }
+}
+
 /****************/
 /* PRODUCT SLIDER STYLING */
 /****************/
@@ -916,11 +960,11 @@ header nav > ul > li:last-child {
     display: flex;
     gap: 1.25rem;
     overflow: auto;
-    padding: 0 2.5rem;
+    padding: 0 3rem;
 }
 
 .productSlider img {
-    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -1035,6 +1079,36 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
+@media (max-width: 768px) {
+    .productSlider ul {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .productSlider ul:nth-child(2) {
+        padding-inline-start: 1.5rem;
+        padding-left: 1.5rem;
+        scroll-padding-left: 1.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .productSlider ul li ul li button {
+        display: none;
+    }
+
+    .productSlider img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .productSlider h4 {
+        margin: 1rem 0 0 0;
+    }
+
+    .productSlider ul li a figure {
+        padding-bottom: 1rem;
+    }
+}
+
 /****************/
 /* SPORT CATEGORY SLIDER STYLING */
 /****************/
@@ -1049,9 +1123,12 @@ header nav > ul > li:last-child {
 .sportCategories ul {
     display: flex;
     gap: 1.25rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-bottom: 1.875rem;
+    overflow: auto;
+    padding: 0 3rem;
+}
+
+.sportCategories ul:first-of-type li:nth-child(2) ul {
+    padding: 0;
 }
 
 .sportCategories li {
@@ -1059,7 +1136,7 @@ header nav > ul > li:last-child {
 }
 
 .sportCategories img {
-    width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
@@ -1100,7 +1177,7 @@ header nav > ul > li:last-child {
     gap: 0.625rem;
 }
 
-.sportCategories ul li ul li {
+.sportCategories ul li ul li button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1108,6 +1185,14 @@ header nav > ul > li:last-child {
     width: 3rem;
     height: 3rem;
     border-radius: 100rem;
+    padding: 0;
+}
+
+.sportCategories ul li ul li button:hover {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    background-color: var(--button-slider-hover);
 }
 
 .sportCategories::-webkit-scrollbar {
@@ -1152,6 +1237,39 @@ header nav > ul > li:last-child {
     display: none
 }
 
+.sportCategories ul:nth-child(2) {
+    padding-inline-start: 2.5rem;
+    padding-left: 2.5rem;
+    scroll-padding-left: 2.5rem;
+    scroll-snap-type: x mandatory;
+}
+
+.sportCategories ul:nth-child(2) li {
+    scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+    .sportCategories ul {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .sportCategories ul:nth-child(2) {
+        padding-inline-start: 1.5rem;
+        padding-left: 1.5rem;
+        scroll-padding-left: 1.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .sportCategories ul li ul li button {
+        display: none;
+    }
+
+    .sportCategories img {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
 /********************************/
 /* SHOE CATEGORY SLIDER STYLING */
 /********************************/
@@ -1170,6 +1288,17 @@ header nav > ul > li:last-child {
     overflow: hidden;
 }
 
+.shoeCategorySlider ul:first-of-type {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoeCategorySlider ul:first-of-type li:nth-child(2) ul {
+    padding: 0;
+}
+
 .shoeCategorySlider h4 {
     position: absolute;
     width: 1px;
@@ -1183,7 +1312,7 @@ header nav > ul > li:last-child {
 }
 
 .shoeCategorySlider img {
-    width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
@@ -1207,16 +1336,9 @@ header nav > ul > li:last-child {
     top: 20%;
 }
 
-.shoeCategorySlider ul:first-of-type {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .shoeCategorySlider ul:first-of-type li:nth-child(2) ul {
     padding: 0;
 }
-
 
 .shoeCategorySlider ul li ul {
     display: flex;
@@ -1241,6 +1363,89 @@ header nav > ul > li:last-child {
     background-color: var(--button-slider-hover);
 }
 
+@media (max-width: 768px) {
+    .shoeCategorySlider ul {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .shoeCategorySlider ul:nth-child(2) {
+        padding-inline-start: 1.5rem;
+        padding-left: 1.5rem;
+        scroll-padding-left: 1.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .shoeCategorySlider ul li ul li button {
+        display: none;
+    }
+
+    .shoeCategorySlider img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .shoeCategorySlider ul:first-of-type {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .shoeCategorySlider ul:last-of-type {
+        overflow: auto;
+    }
+
+    .shoeCategorySlider::-webkit-scrollbar {
+        width: 0.875rem;
+        height: 0.125rem;
+    }
+
+    .shoeCategorySlider::-webkit-scrollbar-thumb {
+        height: 0.125rem;
+        background: var(--full-black);
+    }
+
+    .shoeCategorySlider::-webkit-scrollbar-track {
+        width: 0.125rem;
+        background: var(--full-white);
+    }
+
+    .shoeCategorySlider ul::-webkit-scrollbar-track {
+        margin: 0 2.5rem;
+    }
+
+    .shoeCategorySlider ul::-webkit-scrollbar {
+        width: 0.875rem;
+    }
+
+    .shoeCategorySlider ul::-webkit-scrollbar-thumb {
+        background-color: var(--full-black);
+        background-clip: content-box;
+        border: solid transparent;
+        border-width: 0.25rem 0;
+        border-radius: 0.4375rem;
+        box-shadow: inset 0 0 0 0.125rem;
+    }
+
+    .shoeCategorySlider ul::-webkit-scrollbar-corner {
+        background-color: transparent
+    }
+
+    .shoeCategorySlider ul::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none
+    }
+
+    .shoeCategorySlider ul:nth-child(2) {
+        padding-inline-start: 1.5rem;
+        padding-left: 1.5rem;
+        scroll-padding-left: 1.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .shoeCategorySlider ul:nth-child(2) li {
+        scroll-snap-align: start;
+    }
+}
+
 /****************/
 /* SEX CATEGORY STYLING */
 /****************/
@@ -1254,6 +1459,11 @@ header nav > ul > li:last-child {
 .sexCategories ul {
     display: flex;
     gap: 1.25rem;
+    padding: 0 2.5rem;
+}
+
+.sexCategories h3 {
+    padding-left:2.5rem;
 }
 
 .sexCategories figcaption {
@@ -1291,8 +1501,81 @@ header nav > ul > li:last-child {
 }
 
 .sexCategories img {
-    width: 100%;
+    max-width: 400px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .sexCategories ul {
+        overflow: auto;
+        padding: 0 24px;
+    }
+
+    .sexCategories h3 {
+        padding-left: 24px;
+    }
+
+    .sexCategories::-webkit-scrollbar {
+        width: 0.875rem;
+        height: 0.125rem;
+    }
+
+    .sexCategories::-webkit-scrollbar-thumb {
+        height: 0.125rem;
+        background: var(--full-black);
+    }
+
+    .sexCategories::-webkit-scrollbar-track {
+        width: 0.125rem;
+        background: var(--full-white);
+    }
+
+    .sexCategories ul::-webkit-scrollbar-track {
+        margin: 0 2.5rem;
+    }
+
+    .sexCategories ul::-webkit-scrollbar {
+        width: 0.875rem;
+    }
+
+    .sexCategories ul::-webkit-scrollbar-thumb {
+        background-color: var(--full-black);
+        background-clip: content-box;
+        border: solid transparent;
+        border-width: 0.25rem 0;
+        border-radius: 0.4375rem;
+        box-shadow: inset 0 0 0 0.125rem;
+    }
+
+    .sexCategories ul::-webkit-scrollbar-corner {
+        background-color: transparent
+    }
+
+    .sexCategories ul::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none
+    }
+
+    .sexCategories ul:nth-child(2) {
+        padding-inline-start: 1.5rem;
+        padding-left: 1.5rem;
+        scroll-padding-left: 1.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .sexCategories ul:nth-child(2) li {
+        scroll-snap-align: start;
+    }
+
+    .sexCategories img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .sexCategories li a figure {
+        padding-bottom: 1rem;
+    }
 }
 
 /****************/
@@ -1309,9 +1592,8 @@ header nav > ul > li:last-child {
 .membershipCategories ul {
     display: flex;
     gap: 1.25rem;
-    overflow-x: visible;
-    overflow-y: hidden;
-    padding-bottom: 1.875rem;
+    overflow: auto;
+    padding: 0 2.5rem;
 }
 
 .membershipCategories li {
@@ -1319,7 +1601,7 @@ header nav > ul > li:last-child {
 }
 
 .membershipCategories img {
-    width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
@@ -1341,6 +1623,24 @@ header nav > ul > li:last-child {
     line-height: 1.75rem;
     color: white;
     margin-bottom: 0.5rem;
+}
+
+.membershipCategories ul li ul li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100rem;
+    padding: 0;
+}
+
+.membershipCategories ul li ul li button:hover {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    background-color: var(--button-slider-hover);
 }
 
 .membershipCategories span {
@@ -1373,7 +1673,7 @@ header nav > ul > li:last-child {
     gap: 0.625rem;
 }
 
-.membershipCategories ul li ul li {
+.membershipCategories ul li ul li button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1423,6 +1723,39 @@ header nav > ul > li:last-child {
     width: 0;
     height: 0;
     display: none
+}
+
+.membershipCategories ul:nth-child(2) {
+    padding-inline-start: 2.5rem;
+    padding-left: 2.5rem;
+    scroll-padding-left: 2.5rem;
+    scroll-snap-type: x mandatory;
+}
+
+.membershipCategories ul:nth-child(2) li {
+    scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+    .membershipCategories ul {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .membershipCategories ul:nth-child(2) {
+        padding-inline-start: 1.5rem;
+        padding-left: 1.5rem;
+        scroll-padding-left: 1.5rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .membershipCategories ul li ul li button {
+        display: none;
+    }
+
+    .membershipCategories img {
+        max-width: 300px;
+        height: auto;
+    }
 }
 
 /**********************/
@@ -1486,6 +1819,25 @@ header nav > ul > li:last-child {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .merchMenu ul li ul li {
+        display: none;
+    }
+
+    .merchMenu ul {
+        flex-direction: column;
+    }
+
+    .merchMenu {
+        margin: 0;
+        padding-left: 24px;
+    }
+
+    .merchMenu h4 {
+        font-weight: 500;
+    }
 }
 
 /*****************/
@@ -1656,6 +2008,10 @@ header nav > ul > li:last-child {
     gap: 0.625rem;
 }
 
+.productHeader>ul:first-of-type {
+    display: none;
+}
+
 .productHeader ul li button {
     display: flex;
     align-items: center;
@@ -1667,6 +2023,49 @@ header nav > ul > li:last-child {
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 200ms;
+}
+
+@media (max-width: 768px) {
+    .productHeader {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .productHeader h2 {
+        font-size: 20px;
+        padding: 1.5rem 0;
+    }
+
+    .productHeader ul:last-child li:last-child {
+        display: none;
+    }
+
+    .productHeader ul:last-child li:first-child {
+        border: 1px solid var(--light-grey);
+        border-radius: 20rem;
+    }
+
+    .productHeader>ul:first-of-type {
+        all: unset;
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--light-grey);
+    }
+
+    .productHeader>ul:last-of-type {
+        padding: 1rem 0;
+    }
+
+    .productHeader ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .productHeader ul li {
+        list-style-type: none;
+        white-space: nowrap;
+    }
 }
 
 /*************************/
@@ -1682,14 +2081,14 @@ header nav > ul > li:last-child {
 .productGrid > aside {
     width: 260px;
     transition: all 0.2s ease-in-out;
-    margin-left: 0;
+    margin-left: 48px;
+
 }
 
 .productGrid > aside.slideOut {
-    margin-left: -20vw;
+    margin-left: -24vw;
 }
 
-/* Add this class to make the sidebar sticky when it slides out */
 .productGrid > aside.sticky {
     position: fixed;
     top: 0;
@@ -1701,7 +2100,7 @@ header nav > ul > li:last-child {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Adjust z-index based on your needs */
+    z-index: 1000;
 }
 
 .productGrid ul {
@@ -1724,6 +2123,7 @@ header nav > ul > li:last-child {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1.25rem;
     row-gap: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .productGrid section.slideOut {
@@ -1745,6 +2145,23 @@ header nav > ul > li:last-child {
     opacity: 0.5;
     text-decoration-line: line-through;
     padding-left: 0.625rem;
+}
+
+@media (max-width: 768px) {
+    .productGrid aside {
+        display: none;
+    }
+
+    .productGrid section {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5rem;
+        row-gap: 1rem;
+        padding: 0 1.25rem;
+    }
+
+    .productGrid h3 {
+        font-size: 1rem;
+    }
 }
 
 /*************************/
@@ -1899,9 +2316,39 @@ footer ul:first-of-type li {
 @media (max-width: 48rem) {
     footer section {
         flex-direction: column;
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    footer section nav ul:not(:first-child) li:not(:first-child) {
+        display: none;
+    }
+
+    footer section nav ul:first-child {
+        margin-bottom: 1.5rem;
+    }
+
+    footer section nav ul:not(:first-child) {
+        padding: 1rem 0;
+    }
+
+    footer section>ul {
+        margin: 1rem 0;
     }
 
     footer section nav {
         flex-direction: column;
+    }
+
+    footer section:nth-child(2) {
+        align-items: start;
+    }
+
+    footer section:nth-child(2) ul:nth-child(1) {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    footer section:nth-child(2) ul:nth-child(2) {
+        justify-content: start;
     }
 }
