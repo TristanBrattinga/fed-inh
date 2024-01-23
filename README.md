@@ -2173,7 +2173,29 @@ window.addEventListener('scroll', handleScrollDirection)
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Bij de tweede toegankelijkheidstest ben ik met de screenreader door mijn eigen website gegaan. Ik miste best wat labels en andere toegankelijkheids hulpmiddelen binnen mijn code. Deze heb ik hierna gelijk toegevoegd aan de buttons, form controls en andere interactieve elementen. Verder heb ik mijn heading structuur opgebouwd met de hulp van de w3c validator. Door de optie outline te selecteren krijg ik precies de heading structuur van mijn website. Aan de hand hiervan heb ik deze perfect kunnen aanpassen. Zo heb ik ervoor gezorgd dat de heading structuur van mijn code bijna perfect is. De links zijn goed te begrijpen en heb ik labels gegeven. Ook heb ik onderscheid kunnen maken tussen main en sub navigatie menu's. Zie hieronder de structuur van de originele nike website:
+
+  <img src="readme-images/outline-nike.png" alt="screenshot of outline nike website" />
+
+Zie hieronder de heading structuur van mijn website
+
+  <img src="readme-images/outline-me.png" alt="screenshot of outline nike website" />
+
+Ook heb ik mijn website aan de hand van de WCAG checklist nagelopen en dit zijn mijn bevindingen hiervan:
+<ul>
+<li>Ik moet nog de prefers reduced motion media query gebruiken</li>
+<li>Contrasten nalopen</li>
+<li>Contrast bij de hero text is heel laag</li>
+<li>Responsiveness is nog niet in orde</li>
+</ul>
+
+Verder heb ik mijn website ook gecheckt met de web extension Wave Evaluation Tool. Hier komen echt handige tips en low hanging fruit uit. De error die nog te zien zijn, zijn over het algemeen te negeren, omdat ze verklaarbaar zijn. Zie hieronder een foto van mijn summary:
+
+<img src="readme-images/wave-summary.png" alt="Summary of wave checklist"/>
+
+
+
+Naast deze punten voldoet mijn website heel goed aan de gestelde toegankelijkheids punten.
 
 </details>
 
@@ -4553,6 +4575,8 @@ Wat ik zelf wel heel nice vind is dat ik de newsletter modal heb gemaakt. Deze w
    <li>https://stackoverflow.com/questions/37114840/css-to-change-image-url</li>
    <li>https://stackoverflow.com/questions/51545612/making-an-array-of-html-elements</li>
 <li>https://www.freecodecamp.org/news/what-is-rem-in-css-rem-unit-font-size-padding-height-and-more/#:~:text=For%20the%20padding%20of%20the,size%20of%20the%20root%20element.</li>
+<li>https://validator.w3.org/</li>
+<li>https://www.nike.com/nl/</li>
 </ol>
 
 
