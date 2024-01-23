@@ -1,6 +1,4 @@
-- Check headings in every section (https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.nike.com%2Fnl%2F&showoutline=yes)
 - Responsiveness
 - remove styling from JS
-- Alles omzetten naar variabelen
 - Add dark/light mode
 - Code van comments voorzien

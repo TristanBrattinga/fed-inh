@@ -11,13 +11,19 @@
 
     /*COLORS*/
     --color-text: #111;
+    --full-black: #000;
+    --full-white: #FFF;
     --color-background: #eee;
     --nike-grey: #F5F5F5;
-    --shadow1: #e5e5e5;
+    --light-grey: #e5e5e5;
     --footer-black: #111111FF;
+    --footer-light-grey: #7e7e7e;
     --text-lightgrey: #707072;
     --product-bestseller: #9E3500;
-
+    --placeholder-color: #8D8D8D;
+    --button-hover-color: #9e9ea0;
+    --button-slider-hover: #CACACB;
+    --shoe-badge-bg: #11111166;
 }
 
 /*********************/
@@ -41,6 +47,13 @@
 @font-face {
     font-family: 'Helvetica Now Text Medium';
     src: url("../fonts/HelveticaNowTextMedium.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nike TG';
+    src: url("../fonts/Nike-TG.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -74,11 +87,6 @@ main {
     position: relative;
 }
 
-
-section {
-    padding: 0 3rem;
-}
-
 /* TODO Moet nog Helvetica now display worden */
 h2 {
     font-size: 1.5rem;
@@ -107,40 +115,36 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--full-black);
 }
 
 a:focus {
-    border: 0.1rem solid black;
-    outline-color: black;
-    outline-offset: 0.25rem ;
+    border: 0.1rem solid var(--full-black);
+    outline-color: var(--full-black);
+    outline-offset: 0.25rem;
 }
 
 button:focus {
-    outline: 1px solid black;
+    outline: 1px solid var(--full-black);
 }
 
 span:focus {
-    outline: 0.125rem solid black;
+    outline: 0.125rem solid var(--full-black);
 }
 
 svg:focus {
-    outline: black auto 5px;
+    outline: var(--full-black) auto 5px;
 }
 
 input:focus {
-    outline: 0.125rem solid black;
-}
-
-svg:hover {
-    opacity: 0.6;
+    outline: 0.125rem solid var(--full-black);
 }
 
 /******************************/
 /* SCREENREADER CLASS STYLING */
 /******************************/
 
-.screenreader-only {
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -152,6 +156,35 @@ svg:hover {
     border-width: 0;
 }
 
+/*!***************************!*/
+/*!* CONTAINER CLASS STYLING *!*/
+/*!***************************!*/
+
+/*.container {*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*    padding-right: 20px;*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*@media (min-width: 1440px) {*/
+/*    .container {*/
+/*        max-width: 1440px;*/
+/*        padding-right: 160px;*/
+/*        padding-left: 160px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1920px) {*/
+/*    .container {*/
+/*        margin: 0 auto;*/
+/*        width: 100%;*/
+/*        max-width: 1920px;*/
+/*        padding-right: 160px;*/
+/*        padding-left: 160px;*/
+/*    }*/
+/*}*/
+
 /****************/
 /* BUTTON STYLING */
 /****************/
@@ -160,7 +193,7 @@ button {
     background-color: white;
     border-radius: 5rem;
     border: none;
-    color: black;
+    color: var(--full-black);
     padding: 0.375rem 1.25rem;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -200,7 +233,7 @@ body.showMenu::before {
 
 header > a {
     background-color: white;
-    border: 0.125rem solid black;
+    border: 0.125rem solid var(--full-black);
     padding: 0.25rem 1rem;
     position: absolute;
     left: -100rem;
@@ -264,7 +297,7 @@ header section ul li a {
     line-height: 1;
     color: var(--color-text);
     font-family: var(--helvetica-text-medium);
-    border-right: 0.125rem solid #111111;
+    border-right: 0.125rem solid var(--color-text);
     padding-right: 0.75rem;
     margin-right: 0.75rem;
 }
@@ -293,7 +326,7 @@ nav ul li:nth-child(2) ul li {
     position: relative;
 }
 
-nav ul li:nth-child(2) ul li> ul {
+nav ul li:nth-child(2) ul li > ul {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -322,7 +355,19 @@ header nav ul li:nth-child(2) ul li {
     white-space: nowrap;
 }
 
-nav > ul > li:first-child {
+header nav h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+header nav > ul > li:first-child {
     width: 16.75rem;
 }
 
@@ -332,7 +377,7 @@ header nav ul li:nth-child(2) ul li a {
 }
 
 header nav ul li:nth-child(2) ul li:hover {
-    border-bottom: 0.125rem solid black;
+    border-bottom: 0.125rem solid var(--full-black);
 }
 
 header nav ul li:nth-child(3) ul {
@@ -354,7 +399,7 @@ header form button {
 }
 
 header form button:hover {
-    background-color: #E5E5E5;
+    background-color: var(--light-grey);
     border-radius: 100rem;
 }
 
@@ -372,7 +417,7 @@ header input {
 }
 
 header input:hover {
-    background-color: #e5e5e5;
+    background-color: var(--light-grey);
 }
 
 header input::placeholder {
@@ -467,21 +512,22 @@ header nav > ul > li:last-child {
     justify-content: center;
     background-color: var(--nike-grey);
     padding: 0;
-    box-shadow: inset 0 -0.0625rem 0 0 var(--shadow1);
-}
-
-.infoSlider div {
-    display: flex;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-    overflow: hidden;
+    box-shadow: inset 0 -0.0625rem 0 0 var(--light-grey);
 }
 
 @keyframes slideLeft {
-    0% { transform: translateX(0) }
-    5%, 20% { transform: translateX(-100%) }
-    25%, 40% { transform: translateX(-200%) }
-    45%, 100% { transform: translateX(0) }
+    0% {
+        transform: translateX(0)
+    }
+    5%, 20% {
+        transform: translateX(-100%)
+    }
+    25%, 40% {
+        transform: translateX(-200%)
+    }
+    45%, 100% {
+        transform: translateX(0)
+    }
 }
 
 .infoSlider ul {
@@ -493,21 +539,29 @@ header nav > ul > li:last-child {
 }
 
 
-
 .infoSlider ul li {
     min-width: 100%;
     box-sizing: border-box;
     font-family: var(--helvetica-text);
 }
 
-.infoSlider p {
+.infoSlider h4 {
+    font-family: "Helvetica Now Text", sans-serif;
+    font-weight: 500;
     line-height: 1;
     text-align: center;
 }
 
 .infoSlider p:last-child {
+    text-align: center;
     font-size: 0.75rem;
     line-height: 1.5rem;
+}
+
+.infoSlider a {
+    font-family: "Helvetica Now Text Medium", Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 /************************/
@@ -518,10 +572,10 @@ header nav > ul > li:last-child {
     padding: 0;
 }
 
-.callToAction h1 {
+.callToAction h2 {
     font-family: var(--nike-futura);
     font-size: 3rem;
-    color: black;
+    color: var(--full-black);
     line-height: 1;
     text-transform: uppercase;
 }
@@ -538,15 +592,15 @@ header nav > ul > li:last-child {
     color: white;
     font-weight: 500;
     padding: 0.375rem 1.25rem;
-    border: 0.0625rem solid black;
-    background-color: black;
+    border: 0.0625rem solid var(--full-black);
+    background-color: var(--full-black);
     border-radius: 100rem;
     margin-top: 1.875rem;
 }
 
 .callToAction span:hover {
-    border-color: #707072;
-    background-color: #707072;
+    border-color: var(--text-lightgrey);
+    background-color: var(--text-lightgrey);
 }
 
 .callToAction h1 {
@@ -554,7 +608,7 @@ header nav > ul > li:last-child {
 }
 
 .callToAction p {
-    color: black;
+    color: var(--full-black);
     margin-top: 1.5rem;
 }
 
@@ -571,7 +625,7 @@ header nav > ul > li:last-child {
     background-image: url("/images/calltoaction.png");
     padding: 1.25rem 0;
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
 }
 
 .callToAction figure figcaption {
@@ -581,7 +635,6 @@ header nav > ul > li:last-child {
     color: white;
     margin: 0 auto;
 }
-
 
 
 @media (max-width: 84.375rem) {
@@ -620,7 +673,7 @@ header nav > ul > li:last-child {
 .hero span {
     display: block;
     width: fit-content;
-    color: black;
+    color: var(--full-black);
     font-weight: 500;
     padding: 0.375rem 1.25rem;
     border: 0.0625rem solid white;
@@ -630,12 +683,12 @@ header nav > ul > li:last-child {
 }
 
 .hero span:hover {
-    background-color: #9e9ea0;
-    border-color: #9e9ea0;
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
 }
 
 .hero figure img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -684,7 +737,7 @@ header nav > ul > li:last-child {
 }
 
 .releasedSlider img {
-    width: 26.875rem;
+    width: 100%;
     height: auto;
 }
 
@@ -692,11 +745,7 @@ header nav > ul > li:last-child {
     padding-bottom: 2.5rem;
 }
 
-.releasedSlider figure p:nth-child(2) {
-    color: var(--text-lightgrey)
-}
-
-.releasedSlider p {
+.releasedSlider h4 {
     font-size: 1.25rem;
     line-height: 1.875rem;
     font-weight: 500;
@@ -723,7 +772,7 @@ header nav > ul > li:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E5E5E5;
+    background-color: var(--light-grey);
     width: 3rem;
     height: 3rem;
     border-radius: 100rem;
@@ -734,7 +783,7 @@ header nav > ul > li:last-child {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
-    background-color: #CACACB;
+    background-color: var(--button-slider-hover);
 }
 
 .releasedSlider::-webkit-scrollbar {
@@ -744,12 +793,12 @@ header nav > ul > li:last-child {
 
 .releasedSlider::-webkit-scrollbar-thumb {
     height: 0.125rem;
-    background: #000000;
+    background: var(--full-black);
 }
 
 .releasedSlider::-webkit-scrollbar-track {
     width: 0.125rem;
-    background: #FFF;
+    background: var(--full-white);
 }
 
 .releasedSlider ul::-webkit-scrollbar-track {
@@ -761,7 +810,7 @@ header nav > ul > li:last-child {
 }
 
 .releasedSlider ul::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: var(--full-black);
     background-clip: content-box;
     border: solid transparent;
     border-width: 0.25rem 0;
@@ -816,8 +865,8 @@ header nav > ul > li:last-child {
 }
 
 .productSlider img {
-    max-width: 31.25rem;
-    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
 }
 
 .productSlider ul li a figure {
@@ -827,8 +876,9 @@ header nav > ul > li:last-child {
     padding-bottom: 2.5rem;
 }
 
-.productSlider figcaption p {
+.productSlider figcaption h4 {
     font-family: var(--helvetica-text-medium);
+    font-weight: 500;
 }
 
 .productSlider figcaption p:nth-child(2) {
@@ -863,7 +913,7 @@ header nav > ul > li:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E5E5E5;
+    background-color: var(--light-grey);
     width: 3rem;
     height: 3rem;
     border-radius: 100rem;
@@ -874,7 +924,7 @@ header nav > ul > li:last-child {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
-    background-color: #CACACB;
+    background-color: var(--button-slider-hover);
 }
 
 .productSlider::-webkit-scrollbar {
@@ -884,12 +934,12 @@ header nav > ul > li:last-child {
 
 .productSlider::-webkit-scrollbar-thumb {
     height: 0.125rem;
-    background: #000000;
+    background: var(--full-black);
 }
 
 .productSlider::-webkit-scrollbar-track {
     width: 0.125rem;
-    background: #FFF;
+    background: var(--full-white);
 }
 
 .productSlider ul::-webkit-scrollbar-track {
@@ -901,7 +951,7 @@ header nav > ul > li:last-child {
 }
 
 .productSlider ul::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: var(--full-black);
     background-clip: content-box;
     border: solid transparent;
     border-width: 0.25rem 0;
@@ -954,19 +1004,20 @@ header nav > ul > li:last-child {
 }
 
 .sportCategories img {
-    max-width: 25rem;
-    aspect-ratio: 3/2;
+    width: 100%;
+    height: auto;
 }
 
-.sportCategories span {
+.sportCategories h4 {
     position: absolute;
     left: 3rem;
     bottom: 1.875rem;
     font-family: var(--helvetica-text-medium);
+    font-weight: 500;
     line-height: 1.5rem;
     display: block;
     width: fit-content;
-    color: black;
+    color: var(--full-black);
     padding: 0.375rem 1.25rem;
     border: 0.0625rem solid white;
     background-color: white;
@@ -975,8 +1026,8 @@ header nav > ul > li:last-child {
 }
 
 .sportCategories span:hover {
-    border-color: #9e9ea0;
-    background-color: #9e9ea0;
+    border-color: var(--button-hover-color);
+    background-color: var(--button-hover-color);
 }
 
 .sportCategories figure p:nth-child(2) {
@@ -998,7 +1049,7 @@ header nav > ul > li:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E5E5E5;
+    background-color: var(--light-grey);
     width: 3rem;
     height: 3rem;
     border-radius: 100rem;
@@ -1011,12 +1062,12 @@ header nav > ul > li:last-child {
 
 .sportCategories::-webkit-scrollbar-thumb {
     height: 0.125rem;
-    background: #000000;
+    background: var(--full-black);
 }
 
 .sportCategories::-webkit-scrollbar-track {
     width: 0.125rem;
-    background: #FFF;
+    background: var(--full-white);
 }
 
 .sportCategories ul::-webkit-scrollbar-track {
@@ -1028,7 +1079,7 @@ header nav > ul > li:last-child {
 }
 
 .sportCategories ul::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: var(--full-black);
     background-clip: content-box;
     border: solid transparent;
     border-width: 0.25rem 0;
@@ -1064,9 +1115,21 @@ header nav > ul > li:last-child {
     overflow: hidden;
 }
 
+.shoeCategorySlider h4 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .shoeCategorySlider img {
-    max-width: 31.25rem;
-    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
 }
 
 .shoeCategorySlider ul li a figure {
@@ -1081,7 +1144,7 @@ header nav > ul > li:last-child {
     color: white;
     font-size: 1rem;
     line-height: 1.5rem;
-    background-color: #11111166;
+    background-color: var(--shoe-badge-bg);
     border-radius: 1.25rem;
     position: absolute;
     padding: 0.375rem 1rem;
@@ -1109,7 +1172,7 @@ header nav > ul > li:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E5E5E5;
+    background-color: var(--light-grey);
     width: 3rem;
     height: 3rem;
     border-radius: 100rem;
@@ -1120,7 +1183,7 @@ header nav > ul > li:last-child {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
-    background-color: #CACACB;
+    background-color: var(--button-slider-hover);
 }
 
 /****************/
@@ -1130,7 +1193,6 @@ header nav > ul > li:last-child {
 .sexCategories {
     display: flex;
     flex-direction: column;
-    padding: 0 2.5rem;
     gap: 2.5rem;
 }
 
@@ -1145,12 +1207,13 @@ header nav > ul > li:last-child {
     bottom: 1.875rem;
 }
 
-.sexCategories span {
+.sexCategories h4 {
     font-family: var(--helvetica-text-medium);
     line-height: 1.5rem;
     display: block;
+    font-weight: 500;
     width: fit-content;
-    color: black;
+    color: var(--full-black);
     padding: 0.375rem 1.25rem;
     border: 0.0625rem solid white;
     background-color: white;
@@ -1163,9 +1226,9 @@ header nav > ul > li:last-child {
     gap: 0.375rem;
 }
 
-.sexCategories span:hover {
-    border-color: #9e9ea0;
-    background-color: #9e9ea0;
+.sexCategories h4:hover {
+    border-color: var(--button-hover-color);
+    background-color: var(--button-hover-color);
 }
 
 .sexCategories li {
@@ -1173,7 +1236,7 @@ header nav > ul > li:last-child {
 }
 
 .sexCategories img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1201,7 +1264,7 @@ header nav > ul > li:last-child {
 }
 
 .membershipCategories img {
-    width: 16rem;
+    width: 100%;
     height: auto;
 }
 
@@ -1230,7 +1293,7 @@ header nav > ul > li:last-child {
     line-height: 1.5rem;
     display: block;
     width: fit-content;
-    color: black;
+    color: var(--full-black);
     padding: 0.375rem 1.25rem;
     border: 0.0625rem solid white;
     background-color: white;
@@ -1240,8 +1303,8 @@ header nav > ul > li:last-child {
 }
 
 .membershipCategories span:hover {
-    border-color: #9e9ea0;
-    background-color: #9e9ea0;
+    border-color: var(--button-hover-color);
+    background-color: var(--button-hover-color);
 }
 
 .membershipCategories ul:first-of-type {
@@ -1259,7 +1322,7 @@ header nav > ul > li:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E5E5E5;
+    background-color: var(--light-grey);
     width: 3rem;
     height: 3rem;
     border-radius: 100rem;
@@ -1272,12 +1335,12 @@ header nav > ul > li:last-child {
 
 .membershipCategories::-webkit-scrollbar-thumb {
     height: 0.125rem;
-    background: #000000;
+    background: var(--full-black);
 }
 
 .membershipCategories::-webkit-scrollbar-track {
     width: 0.125rem;
-    background: #FFF;
+    background: var(--full-white);
 }
 
 .membershipCategories ul::-webkit-scrollbar-track {
@@ -1289,7 +1352,7 @@ header nav > ul > li:last-child {
 }
 
 .membershipCategories ul::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: var(--full-black);
     background-clip: content-box;
     border: solid transparent;
     border-width: 0.25rem 0;
@@ -1363,7 +1426,7 @@ header nav > ul > li:last-child {
     text-decoration: underline;
 }
 
-.merchMenu h5 {
+.merchMenu h4 {
     font-family: var(--helvetica-text);
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1433,9 +1496,9 @@ header nav > ul > li:last-child {
     width: 100%;
 }
 
-.modal form>button {
+.modal form > button {
     all: unset;
-    background-color: black;
+    background-color: var(--full-black);
     width: 100%;
     max-width: 18.125rem;
     text-transform: uppercase;
@@ -1453,7 +1516,7 @@ header nav > ul > li:last-child {
 .modal article p {
     font-size: .875rem;
     line-height: 1rem;
-    color: #8D8D8D;
+    color: var(--placeholder-color);
     text-align: center;
 }
 
@@ -1467,7 +1530,7 @@ header nav > ul > li:last-child {
 
 .modal input {
     width: 100%;
-    border: 0.0625rem solid #E5E5E5;
+    border: 0.0625rem solid var(--light-grey);
     height: 2.5rem;
     padding: 0 1rem;
 }
@@ -1492,29 +1555,17 @@ header nav > ul > li:last-child {
 
 .modal select {
     width: 100%;
-    border: 0.0625rem solid #E5E5E5;
+    border: 0.0625rem solid var(--light-grey);
     height: 2.5rem;
     padding: 0 1rem;
 }
 
 .modal input::placeholder {
-    color: #8D8D8D;
+    color: var(--placeholder-color);
 }
 
 .modal select::placeholder {
-    color: #8D8D8D;
-}
-
-/****************/
-/* FOOTER STYLING */
-/****************/
-
-footer {
-    display: flex;
-    gap: 1.25rem;
-    color: white;
-    background-color: var(--footer-black);
-    padding: 2.5rem;
+    color: var(--placeholder-color);
 }
 
 /******************************** PAGE 2 STYLING ***************************/
@@ -1613,7 +1664,7 @@ footer {
 }
 
 .productGrid article img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1635,30 +1686,129 @@ footer {
 
 footer {
     display: flex;
+    flex-direction: column;
+    background-color: var(--footer-black);
     justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
-footer ul {
-
+footer section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 0;
 }
 
-footer ul li {
-    color: #7e7e7e;
-    font-size: 0.875rem;
+footer section nav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+footer section nav ul {
+    width: 100%;
+    max-width: 245px;
+}
+
+footer>section>ul {
+    display: flex;
+    gap: 1rem;
+}
+
+footer section:nth-child(2) ul:nth-child(1) {
+    display: flex;
+    align-items: end;
+}
+
+footer section:nth-child(2) ul:nth-child(2) a {
+    color: var(--footer-light-grey);
+    white-space: nowrap;
+}
+
+footer section:nth-child(2) ul:nth-child(2) a:hover {
+    color: var(--full-white);
+}
+
+footer section:nth-child(2) ul:nth-child(2) {
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: end;
+}
+
+footer section:nth-child(2) {
+    align-items: end;
+}
+
+footer nav {
+    display: flex;
+    width: 100%;
+}
+
+footer a {
+    color:white;
+}
+
+footer button {
+    all: unset;
+}
+
+footer h5 {
+    font-family: 'Nike TG', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+}
+
+footer section:nth-child(2) h5 {
+    padding: 0;
+}
+
+footer li {
+    font-family: "Helvetica Now Text Medium", Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+    color: var(--footer-light-grey);
+    margin-bottom: 3px;
+}
+
+footer svg {
+    fill: var(--footer-light-grey);
+    transition: fill 0.2s;
+    cursor: pointer;
+}
+
+footer svg:hover {
+    fill: var(--full-white);
+}
+
+footer button span {
+    margin: 0 8px;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: unset
+}
+
+footer section:nth-child(2) h6 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    color: var(--footer-light-grey);
+}
+
+footer section:nth-child(2)>ul>li {
     line-height: 1;
-    padding: 0.5625rem 0;
 }
 
 footer ul li:hover {
     color: white;
 }
 
-footer ul li:first-child {
-    color: white;
-    text-transform: uppercase;
-}
-
-footer ul:first-of-type {
+footer nav ul li:first-child {
     color: white;
     text-transform: uppercase;
 }
@@ -1667,17 +1817,12 @@ footer ul:first-of-type li {
     color: white;
 }
 
-footer ul:last-of-type {
-    display: flex;
-    gap: 1rem;
-}
-
-/*************************/
-/*  MOBILE STYLING */
-/*************************/
-
 @media (max-width: 48rem) {
-    footer {
+    footer section {
+        flex-direction: column;
+    }
+
+    footer section nav {
         flex-direction: column;
     }
 }
