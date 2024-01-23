@@ -632,7 +632,7 @@ header nav > ul > li:last-child {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: url("/images/calltoaction.png");
+    background-image: url("../images/calltoaction.png");
     padding: 1.25rem 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -787,7 +787,6 @@ header nav > ul > li:last-child {
     padding: 0;
 }
 
-
 .releasedSlider ul li ul {
     display: flex;
     gap: 0.625rem;
@@ -802,6 +801,10 @@ header nav > ul > li:last-child {
     height: 3rem;
     border-radius: 100rem;
     padding: 0;
+}
+
+.releasedSlider ul li ul li button {
+    display: flex;
 }
 
 .releasedSlider ul li ul li button:hover {
@@ -864,7 +867,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .releasedSlider ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1034,7 +1037,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .productSlider ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1203,7 +1206,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .sportCategories ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1318,7 +1321,7 @@ header nav > ul > li:last-child {
     background-color: var(--button-slider-hover);
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .shoeCategorySlider ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1456,14 +1459,18 @@ header nav > ul > li:last-child {
 }
 
 .sexCategories img {
-    max-width: 25rem;
+    width: 100%;
     height: auto;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .sexCategories ul {
         overflow: auto;
         padding: 0 1.5rem;
+    }
+
+    .sexCategories img {
+        width: 25rem;
     }
 
     .sexCategories h3 {
@@ -1591,6 +1598,10 @@ header nav > ul > li:last-child {
     padding: 0;
 }
 
+.membershipCategories ul li ul {
+    padding: 0;
+}
+
 .membershipCategories ul li ul li button:hover {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1691,7 +1702,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .membershipCategories ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1776,7 +1787,7 @@ header nav > ul > li:last-child {
     margin-bottom: 1.5rem;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .merchMenu ul li ul li {
         display: none;
     }
@@ -1980,7 +1991,7 @@ header nav > ul > li:last-child {
     transition-duration: 200ms;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .productHeader {
         flex-direction: column;
         padding: 0 1.25rem;
@@ -2036,7 +2047,7 @@ header nav > ul > li:last-child {
 .productGrid > aside {
     width: 16.25rem;
     transition: all 0.2s ease-in-out;
-    margin-left: 40.5rem;
+    margin-left: 3rem;
 
 }
 
@@ -2102,7 +2113,7 @@ header nav > ul > li:last-child {
     padding-left: 0.625rem;
 }
 
-@media (max-width: 760.5rem) {
+@media (max-width: 48rem) {
     .productGrid aside {
         display: none;
     }
@@ -2135,7 +2146,7 @@ footer section {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 9rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 2.5rem 2.5rem 0;
 }
