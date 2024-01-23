@@ -70,7 +70,7 @@
 }
 
 html {
-    font-size: var(--font-size); /*Variabele om de base font size in te stellen. In het geval van Chrome 16px.*/
+    font-size: var(--font-size); /*Variabele om de base font size in te stellen. In het geval van Chrome 1rem.*/
     overflow-x: hidden;
 }
 
@@ -125,7 +125,7 @@ a:focus {
 }
 
 button:focus {
-    outline: 1px solid var(--full-black);
+    outline: 0.0625rem solid var(--full-black);
 }
 
 span:focus {
@@ -133,57 +133,12 @@ span:focus {
 }
 
 svg:focus {
-    outline: var(--full-black) auto 5px;
+    outline: var(--full-black) auto 0.3125rem;
 }
 
 input:focus {
     outline: 0.125rem solid var(--full-black);
 }
-
-/******************************/
-/* SCREENREADER CLASS STYLING */
-/******************************/
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-}
-
-/*!***************************!*/
-/*!* CONTAINER CLASS STYLING *!*/
-/*!***************************!*/
-
-/*.container {*/
-/*    width: 100%;*/
-/*    margin: 0 auto;*/
-/*    padding-right: 20px;*/
-/*    padding-left: 20px;*/
-/*}*/
-
-/*@media (min-width: 1440px) {*/
-/*    .container {*/
-/*        max-width: 1440px;*/
-/*        padding-right: 160px;*/
-/*        padding-left: 160px;*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 1920px) {*/
-/*    .container {*/
-/*        margin: 0 auto;*/
-/*        width: 100%;*/
-/*        max-width: 1920px;*/
-/*        padding-right: 160px;*/
-/*        padding-left: 160px;*/
-/*    }*/
-/*}*/
 
 /****************/
 /* BUTTON STYLING */
@@ -246,10 +201,10 @@ header > a:focus {
 
 header h1 {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -258,10 +213,10 @@ header h1 {
 
 header h2 {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -280,10 +235,10 @@ header nav {
 
 header nav h4 {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -399,10 +354,10 @@ header nav ul li:nth-child(2) ul li {
 
 header nav h1 {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -451,10 +406,10 @@ header form svg:hover {
 
 header form label {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -757,11 +712,11 @@ header nav > ul > li:last-child {
     bottom: 3.375rem;
     left: 2.25rem;
     background: rgba(0, 0, 0, 0.27);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.25rem);
+    -webkit-backdrop-filter: blur(0.25rem);
+    border: 0.0625rem solid rgba(0, 0, 0, 0.1);
     padding: 0.75rem;
 }
 
@@ -807,7 +762,7 @@ header nav > ul > li:last-child {
 }
 
 .releasedSlider img {
-    max-width: 500px;
+    max-width: 31.25rem;
     height: auto;
 }
 
@@ -909,7 +864,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .releasedSlider ul {
         padding: 0.5rem 1.5rem;
     }
@@ -926,7 +881,7 @@ header nav > ul > li:last-child {
     }
 
     .releasedSlider img {
-        max-width: 300px;
+        max-width: 18.75rem;
     }
 
     .releasedSlider h4 {
@@ -964,7 +919,7 @@ header nav > ul > li:last-child {
 }
 
 .productSlider img {
-    max-width: 500px;
+    max-width: 31.25rem;
     height: auto;
 }
 
@@ -1079,7 +1034,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .productSlider ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1096,7 +1051,7 @@ header nav > ul > li:last-child {
     }
 
     .productSlider img {
-        max-width: 300px;
+        max-width: 18.75rem;
         height: auto;
     }
 
@@ -1136,7 +1091,7 @@ header nav > ul > li:last-child {
 }
 
 .sportCategories img {
-    max-width: 400px;
+    max-width: 25rem;
     height: auto;
 }
 
@@ -1248,7 +1203,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .sportCategories ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1265,7 +1220,7 @@ header nav > ul > li:last-child {
     }
 
     .sportCategories img {
-        max-width: 300px;
+        max-width: 18.75rem;
         height: auto;
     }
 }
@@ -1301,10 +1256,10 @@ header nav > ul > li:last-child {
 
 .shoeCategorySlider h4 {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -1312,7 +1267,7 @@ header nav > ul > li:last-child {
 }
 
 .shoeCategorySlider img {
-    max-width: 400px;
+    max-width: 25rem;
     height: auto;
 }
 
@@ -1363,7 +1318,7 @@ header nav > ul > li:last-child {
     background-color: var(--button-slider-hover);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .shoeCategorySlider ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1380,7 +1335,7 @@ header nav > ul > li:last-child {
     }
 
     .shoeCategorySlider img {
-        max-width: 300px;
+        max-width: 18.75rem;
         height: auto;
     }
 
@@ -1501,18 +1456,18 @@ header nav > ul > li:last-child {
 }
 
 .sexCategories img {
-    max-width: 400px;
+    max-width: 25rem;
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .sexCategories ul {
         overflow: auto;
-        padding: 0 24px;
+        padding: 0 1.5rem;
     }
 
     .sexCategories h3 {
-        padding-left: 24px;
+        padding-left: 1.5rem;
     }
 
     .sexCategories::-webkit-scrollbar {
@@ -1569,7 +1524,7 @@ header nav > ul > li:last-child {
     }
 
     .sexCategories img {
-        max-width: 300px;
+        max-width: 18.75rem;
         height: auto;
     }
 
@@ -1601,7 +1556,7 @@ header nav > ul > li:last-child {
 }
 
 .membershipCategories img {
-    max-width: 400px;
+    max-width: 25rem;
     height: auto;
 }
 
@@ -1736,7 +1691,7 @@ header nav > ul > li:last-child {
     scroll-snap-align: start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .membershipCategories ul {
         padding: 0.5rem 1.5rem;
     }
@@ -1753,7 +1708,7 @@ header nav > ul > li:last-child {
     }
 
     .membershipCategories img {
-        max-width: 300px;
+        max-width: 18.75rem;
         height: auto;
     }
 }
@@ -1821,7 +1776,7 @@ header nav > ul > li:last-child {
     margin-bottom: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .merchMenu ul li ul li {
         display: none;
     }
@@ -1832,7 +1787,7 @@ header nav > ul > li:last-child {
 
     .merchMenu {
         margin: 0;
-        padding-left: 24px;
+        padding-left: 1.5rem;
     }
 
     .merchMenu h4 {
@@ -1977,10 +1932,10 @@ header nav > ul > li:last-child {
 
 .modal h2 {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -2025,14 +1980,14 @@ header nav > ul > li:last-child {
     transition-duration: 200ms;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .productHeader {
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
     .productHeader h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 1.5rem 0;
     }
 
@@ -2041,7 +1996,7 @@ header nav > ul > li:last-child {
     }
 
     .productHeader ul:last-child li:first-child {
-        border: 1px solid var(--light-grey);
+        border: 0.0625rem solid var(--light-grey);
         border-radius: 20rem;
     }
 
@@ -2051,7 +2006,7 @@ header nav > ul > li:last-child {
         gap: 1rem;
         overflow-x: auto;
         padding: 1rem 0;
-        border-bottom: 1px solid var(--light-grey);
+        border-bottom: 0.0625rem solid var(--light-grey);
     }
 
     .productHeader>ul:last-of-type {
@@ -2079,9 +2034,9 @@ header nav > ul > li:last-child {
 }
 
 .productGrid > aside {
-    width: 260px;
+    width: 16.25rem;
     transition: all 0.2s ease-in-out;
-    margin-left: 48px;
+    margin-left: 40.5rem;
 
 }
 
@@ -2147,7 +2102,7 @@ header nav > ul > li:last-child {
     padding-left: 0.625rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760.5rem) {
     .productGrid aside {
         display: none;
     }
@@ -2180,7 +2135,7 @@ footer section {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1440px;
+    max-width: 9rem;
     margin: 0 auto;
     padding: 2.5rem 2.5rem 0;
 }
@@ -2193,7 +2148,7 @@ footer section nav {
 
 footer section nav ul {
     width: 100%;
-    max-width: 245px;
+    max-width: 240.3125rem;
 }
 
 footer>section>ul {
@@ -2203,10 +2158,10 @@ footer>section>ul {
 
 footer h4 {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -2252,12 +2207,12 @@ footer button {
 
 footer h5 {
     font-family: 'Nike TG', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 5px 0;
+    letter-spacing: 0.0.3125rem;
+    padding: 0.3125rem 0;
 }
 
 footer section:nth-child(2) h5 {
@@ -2266,10 +2221,10 @@ footer section:nth-child(2) h5 {
 
 footer li {
     font-family: "Helvetica Now Text Medium", Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 28px;
+    font-size: 0.75rem;
+    line-height: 1.75rem;
     color: var(--footer-light-grey);
-    margin-bottom: 3px;
+    margin-bottom: 0.1875rem;
 }
 
 footer svg {
@@ -2283,16 +2238,16 @@ footer svg:hover {
 }
 
 footer button span {
-    margin: 0 8px;
-    font-size: 12px;
-    line-height: 12px;
+    margin: 0 0.5rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     text-transform: unset
 }
 
 footer section:nth-child(2) h6 {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
-    line-height: 12px;
+    line-height: 0.75rem;
     color: var(--footer-light-grey);
 }
 
