@@ -724,7 +724,7 @@ header nav > ul > li:last-child {
     .hero figure img {
         width: 100%;
         height: auto;
-        content: url("/images/heromobile.png");
+        content: url("../images/heromobile.png");
     }
 
     .hero figure figcaption {
