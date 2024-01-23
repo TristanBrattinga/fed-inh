@@ -2,3 +2,4 @@
 - remove styling from JS
 - Add dark/light mode
 - Code van comments voorzien
+- Alt teksten toevoegen

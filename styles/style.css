@@ -244,6 +244,30 @@ header > a:focus {
     top: 0.625rem;
 }
 
+header h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+header h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 header aside {
     display: none;
 }
@@ -252,6 +276,18 @@ header nav {
     position: static;
     background-color: white;
     transition: transform 0.6s ease;
+}
+
+header nav h4 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 header nav.slide-out {
@@ -279,6 +315,12 @@ header section ul {
     display: flex;
     gap: 1.5rem;
 }
+
+header section ul:first-of-type a {
+    all:unset
+}
+
+
 
 header section ul:last-child {
     gap: 0;
@@ -545,9 +587,10 @@ header nav > ul > li:last-child {
     font-family: var(--helvetica-text);
 }
 
-.infoSlider h4 {
+.infoSlider h3 {
     font-family: "Helvetica Now Text", sans-serif;
     font-weight: 500;
+    font-size: 1rem;
     line-height: 1;
     text-align: center;
 }
@@ -1472,7 +1515,7 @@ header nav > ul > li:last-child {
     margin: 0 auto;
 }
 
-.modal h6 {
+.modal h4 {
     text-align: center;
     font-size: 1.625rem;
     line-height: 1.625rem;
@@ -1566,6 +1609,18 @@ header nav > ul > li:last-child {
 
 .modal select::placeholder {
     color: var(--placeholder-color);
+}
+
+.modal h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /******************************** PAGE 2 STYLING ***************************/
@@ -1715,6 +1770,18 @@ footer section nav ul {
 footer>section>ul {
     display: flex;
     gap: 1rem;
+}
+
+footer h4 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 footer section:nth-child(2) ul:nth-child(1) {
